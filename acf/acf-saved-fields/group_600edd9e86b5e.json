@@ -1,0 +1,872 @@
+{
+    "key": "group_600edd9e86b5e",
+    "title": "Setting theme",
+    "fields": [
+        {
+            "key": "field_600edda91a924",
+            "label": "Accent colors",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_63fc6db27633f",
+            "label": "Main colors",
+            "name": "main_colors",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_63fc859055e22",
+                    "label": "Bg Body",
+                    "name": "bg_body",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#ffffff"
+                },
+                {
+                    "key": "field_63fc6dcc76340",
+                    "label": "Bg color",
+                    "name": "bg_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#efefef"
+                },
+                {
+                    "key": "field_63fc6e6876343",
+                    "label": "Accent  color",
+                    "name": "accent__color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#1b96f3"
+                },
+                {
+                    "key": "field_63fc841cf40ec",
+                    "label": "Additional color",
+                    "name": "additional_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#8224e3"
+                },
+                {
+                    "key": "field_63fc6e2876341",
+                    "label": "Card Color",
+                    "name": "card_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#efefef"
+                },
+                {
+                    "key": "field_63fc6e3d76342",
+                    "label": "Text color",
+                    "name": "text_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#000000"
+                }
+            ]
+        },
+        {
+            "key": "field_63fc6f069f3ae",
+            "label": "Header colors",
+            "name": "header_colors",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_63fc6f069f3af",
+                    "label": "Bg color",
+                    "name": "bg_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#ffffff"
+                },
+                {
+                    "key": "field_63fc6f069f3b0",
+                    "label": "Text color",
+                    "name": "text_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#000000"
+                },
+                {
+                    "key": "field_63fc81dc8e36f",
+                    "label": "Hover nav color",
+                    "name": "hover_nav_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#000000"
+                },
+                {
+                    "key": "field_63fc9208feada",
+                    "label": "Bg  Hover color",
+                    "name": "hover_nav_bg_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#000000"
+                }
+            ]
+        },
+        {
+            "key": "field_63fc6eef9f3a9",
+            "label": "Footer colors",
+            "name": "footer_colors",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_63fc6eef9f3aa",
+                    "label": "Bg color",
+                    "name": "bg_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#1b96f3"
+                },
+                {
+                    "key": "field_63fc6eef9f3ad",
+                    "label": "Text color",
+                    "name": "text_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#ffffff"
+                }
+            ]
+        },
+        {
+            "key": "field_63fc8daf2cf03",
+            "label": "Link Colors",
+            "name": "link_colors",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_63fc8daf2cf04",
+                    "label": "Hover color",
+                    "name": "link_color_hover",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#ffffff"
+                },
+                {
+                    "key": "field_63fc8daf2cf05",
+                    "label": "Color",
+                    "name": "link_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#000000"
+                }
+            ]
+        },
+        {
+            "key": "field_60880b20901c1",
+            "label": "Font size",
+            "name": "b_font_size",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 15,
+            "min": 11,
+            "max": 20,
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64060f11d64df",
+            "label": "Card Style?",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_64060c6e30356",
+            "label": "Card style",
+            "name": "card_style",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_63fc6b15f510b",
+            "label": "Payments",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_601010253c982",
+            "label": "Footer",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_63fc655bc7699",
+            "label": "Footer payments",
+            "name": "ft_payments",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "airtm": "airtm",
+                "apple-pay": "apple-pay",
+                "astropay": "astropay",
+                "banamex": "banamex",
+                "banco-de-brasil": "banco-de-brasil",
+                "banorte": "banorte",
+                "bbva": "bbva",
+                "bitcoin": "bitcoin",
+                "boleto": "boleto",
+                "bradesco": "bradesco",
+                "caixo": "caixo",
+                "crypto": "crypto",
+                "dineromail": "dineromail",
+                "direct-debit": "direct-debit",
+                "ecopayz": "ecopayz",
+                "ecovoucher": "ecovoucher",
+                "elo": "elo",
+                "epayments": "epayments",
+                "eps": "eps",
+                "ethereum": "ethereum",
+                "euteller": "euteller",
+                "ezeewallet": "ezeewallet",
+                "giropay": "giropay",
+                "google-pay": "google-pay",
+                "icicibank": "icicibank",
+                "imps": "imps",
+                "inovapay": "inovapay",
+                "instadebit": "instadebit",
+                "interac": "interac",
+                "itau": "itau",
+                "jeton": "jeton",
+                "khelocard": "khelocard",
+                "klarna": "klarna",
+                "kotak": "kotak",
+                "litecoin": "litecoin",
+                "loterica": "loterica",
+                "mastercard": "mastercard",
+                "minifity": "minifity",
+                "muchbetter": "muchbetter",
+                "neosurf": "neosurf",
+                "neteller": "neteller",
+                "online-banking": "online-banking",
+                "oxxo": "oxxo",
+                "pay4fun": "pay4fun",
+                "payeer": "payeer",
+                "paypal": "paypal",
+                "paysafe": "paysafe",
+                "paytm": "paytm",
+                "perfect-money": "perfect-money",
+                "phone-pe": "phone-pe",
+                "piastrix": "piastrix",
+                "picpay": "picpay",
+                "purple-pay": "purple-pay",
+                "qiwi": "qiwi",
+                "qr": "qr",
+                "santander": "santander",
+                "sbi": "sbi",
+                "scotiabank": "scotiabank",
+                "skrill": "skrill",
+                "skrill-1-tap": "skrill-1-tap",
+                "solo": "solo",
+                "sticpay": "sticpay",
+                "tether": "tether",
+                "todito-cash": "todito-cash",
+                "trustly": "trustly",
+                "upi": "upi",
+                "vcreditos": "vcreditos",
+                "visa": "visa",
+                "webmoney": "webmoney"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
+            "key": "field_603dedfa01af9",
+            "label": "Buttons colors",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_62bac20cb681b",
+            "label": "Buttons Bite",
+            "name": "buttons_bite",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_62bac20cb681c",
+                    "label": "Text color",
+                    "name": "text_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#FFFFFF"
+                },
+                {
+                    "key": "field_62bac20cb681f",
+                    "label": "Hover text color",
+                    "name": "hover_text_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#ffffff"
+                },
+                {
+                    "key": "field_62bac20cb681d",
+                    "label": "Background color",
+                    "name": "background_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#1b96f3"
+                },
+                {
+                    "key": "field_62bac28db6820",
+                    "label": "Background color #2",
+                    "name": "background_color_second",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#1b96f3"
+                }
+            ]
+        },
+        {
+            "key": "field_603cdb586d67f",
+            "label": "Buttons with background",
+            "name": "buttons_back",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_603cdc036cc42",
+                    "label": "Text color",
+                    "name": "text_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#FFFFFF"
+                },
+                {
+                    "key": "field_603cdbe36cc41",
+                    "label": "Background color",
+                    "name": "background_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#1b96f3"
+                },
+                {
+                    "key": "field_603cdc326cc44",
+                    "label": "Hover background color",
+                    "name": "hover_background_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#15851d"
+                },
+                {
+                    "key": "field_603cdc4b6cc45",
+                    "label": "Hover text color",
+                    "name": "hover_text_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#1b96f3"
+                }
+            ]
+        },
+        {
+            "key": "field_605e059b371c3",
+            "label": "Buttons with border",
+            "name": "buttons_border",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_605e059b371c5",
+                    "label": "Border color",
+                    "name": "border_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#ffffff"
+                },
+                {
+                    "key": "field_605e059b371c6",
+                    "label": "Hover border color",
+                    "name": "hover_border_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#1b96f3"
+                },
+                {
+                    "key": "field_605e069f371c8",
+                    "label": "Hover text color",
+                    "name": "hover_text_border_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#ffffff"
+                }
+            ]
+        },
+        {
+            "key": "field_605e06fddd4cb",
+            "label": "Border radius",
+            "name": "border_radius",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 10,
+            "min": 0,
+            "max": 30,
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_60a4f2cd765d2",
+            "label": "Custom code",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_60a4f2dc765d3",
+            "label": "CSS",
+            "name": "custom_code_css",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 20,
+            "new_lines": ""
+        },
+        {
+            "key": "field_62bae764b5178",
+            "label": "Google font",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_62bae822b5179",
+            "label": "Enable google fonts",
+            "name": "enable_google_fonts",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_62bae839b517a",
+            "label": "Import string",
+            "name": "import_string",
+            "type": "text",
+            "instructions": "Example: @import url('https:\/\/fonts.googleapis.com\/css2?family=Oswald:wght@200;500;700&display=swap');",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62bae822b5179",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62bae861b517b",
+            "label": "Font family",
+            "name": "font_family",
+            "type": "text",
+            "instructions": "Example : font-family: 'Oswald', sans-serif;",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62bae822b5179",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-setting-theme"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1678118706
+}

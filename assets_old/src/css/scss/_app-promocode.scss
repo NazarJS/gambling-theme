@@ -1,0 +1,157 @@
+//background-color: var(--main-bg-color);
+//border-radius: var(--border-radius);
+
+.secret-box {
+  display: flex;
+  border-radius: 16px;
+  //box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .08);
+ // background-color: #fff;
+  padding: 24px 40px 24px 24px;
+  box-sizing: border-box;
+
+}
+
+.secret-icon {
+  min-width: 56px;
+  width: 56px;
+  height: 56px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  font-size: 54px;
+
+}
+
+.secret-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.29;
+  color: #2c2c2c;
+  margin-bottom: 12px;
+}
+
+.secret-footer .promocode {
+  width: 160px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, .03);
+  box-sizing: border-box;
+  padding: 0 8px 0 16px;
+  margin-right: 11px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .secret-footer .promocode {
+    width: 300px;
+    height: 50px;
+  }
+  .secret-footer .promocode input{
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.secret-text {
+  font-size: 16px;
+  line-height: 1.38;
+  color: rgba(44, 44, 44, .7);
+}
+
+.secret-footer {
+  display: flex;
+  margin-top: 20px;
+
+  .promocode input {
+    outline: none;
+    box-shadow: none;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.43;
+    color: #2c2c2c;
+    border: none;
+    background: 0 0;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .promocode .copy {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    width: 28px;
+    min-width: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .promocode .copy::after, .secret-footer .promocode .copy::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    transition: opacity .2s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .promocode .copy::after {
+    background-image: url(https://betauth.com/img/copy.svg);
+    opacity: 1;
+  }
+
+  .promocode-btn {
+    min-width: 141px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.43;
+    text-align: center;
+    transition: background-color .2s linear;
+    text-decoration: none;
+    outline: 0;
+    border: none;
+
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .secret-icon {
+    min-width: 32px;
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    position: absolute;
+    font-size: 32px;
+  }
+  .secret-title {
+    font-size: 24px;
+    padding-left: 44px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .secret-footer {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .secret-footer .promocode {
+    overflow: unset;
+    margin-bottom: 20px;
+  }
+
+}
+

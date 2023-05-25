@@ -1,0 +1,121 @@
+<?php
+/**
+ * @param string $url link
+ * @param string $title title of link
+ * @param string $class class for link
+ * @param string $rel attr rel
+ * @param boolean $encode attr encode if block
+ *
+ * @return string
+ */
+function get_button( string $url, string $title, string $class = '', string $rel = 'nofollow', bool $encode = false ): string {
+	$get_encode  = get_field( 'encode_site_links', 'options' ) ?? true;
+	$attr_target = ( get_field( 'attr_target', 'options' ) ) ? 'target="_blank"' : '';
+
+	if ( $get_encode || $encode ) {
+		$encode      = true;
+		$data_encode = 'true';
+	} else {
+		$encode      = false;
+		$data_encode = 'false';
+	}
+
+	if ( $encode ) {
+		$url = base64_encode( $url );
+	}
+
+
+	if ( $class == 'btn-like-official android' ) {
+		if ( $encode ) {
+			$btn = "<button type='button'
+			data-decoded='$data_encode'
+			data-decoded-text='$url'
+			class='link-button $class'> <img alt='Download android' src='" . IMG_DIR . "/android-app-logo.png'></button>";
+
+		} else {
+			$btn = "<a href='$url'
+      rel='$rel' $attr_target
+			class='$class'>$title</a>";
+		}
+	} elseif ( $class == 'download-button btn-like-official android' ) {
+		if ( $encode ) {
+			$btn = "<button type='button'
+			data-decoded='$data_encode'
+			data-decoded-text='$url'
+			class='link-button download-button $class'> <img alt='Download android' src='" . IMG_DIR . "/android-app-logo.png'></button>";
+
+		} else {
+			$btn = "<a href='$url'
+      rel='$rel' $attr_target
+			class='$class'>$title</a>";
+		}
+	} elseif ( $class == 'btn-like-official ios' ) {
+		if ( $encode ) {
+			$btn = "<button type='button'
+			data-decoded='$data_encode'
+			data-decoded-text='$url'
+			class='link-button $class'> <img alt='download for Apple' src='" . IMG_DIR . "/app-store-logo.png'></button>";
+
+		} else {
+			$btn = "<a href='$url'
+      rel='$rel' $attr_target
+			class='$class'>$title</a>";
+		}
+	} elseif ( $class == 'download-button btn-like-official ios' ) {
+		if ( $encode ) {
+			$btn = "<button type='button'
+			data-decoded='$data_encode'
+			data-decoded-text='$url'
+			class='link-button download-button $class'> <img alt='download for Apple' src='" . IMG_DIR . "/app-store-logo.png'></button>";
+
+		} else {
+			$btn = "<a href='$url'
+      rel='$rel' $attr_target
+			class='$class'>$title</a>";
+		}
+	} else {
+		if ( $encode ) {
+			$btn = "<button type='button'
+			data-decoded='$data_encode'
+			data-decoded-text='$url'
+			class='link-button $class'>$title</button>";
+
+		} else {
+			$btn = "<a href='$url'
+      rel='$rel' $attr_target
+			class='$class'>$title</a>";
+		}
+	}
+
+
+	return $btn;
+}
+
+
+// elseif ( $class == 'ui-btn__icon' ) {
+// 	if ( $encode ) {
+// 		// $btn = "<button type='button'
+// 		// data-decoded='$data_encode'
+// 		// data-decoded-text='$url'
+// 		// class='link-button $class'> <img alt='download for Apple' src='" . IMG_DIR . "/app-store-logo.png'></button>";
+
+// 		$btn = "<button type='button'
+// 					data-decoded='$data_encode'
+// 					data-decoded-text='$url'
+// 					class='link-button $class'>
+// 					<img src='./images/flat-color-icons_android-os.png' alt='alt'>
+// 					<span class='ui-btn__name'>
+// 						Download
+
+// 						<span class='ui-btn__subtitle'>
+// 							for Android
+// 						</span>
+// 					</span>
+// 				</button>";
+
+// 	} else {
+// 		$btn = "<a href='$url'
+// 		  rel='$rel' $attr_target
+// 		class='$class'>$title</a>";
+// 	}
+// }

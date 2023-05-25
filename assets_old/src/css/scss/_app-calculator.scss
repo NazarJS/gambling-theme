@@ -1,0 +1,54 @@
+.bonus-calculator{
+  background-color: var(--bg-card-color);
+  padding: 38px;
+  border-radius: var(--border-radius);
+  &__input{
+    display: flex;
+    justify-content: center;
+  }
+  .input-group-append{
+    &:after{
+      font-size: 2rem;
+      padding: 0 20px;
+    }
+    &:nth-child(1):after{
+      content: "+";
+    }
+    &:nth-child(2):after{
+      content: "=";
+    }
+
+  }
+
+  p,.button-wrapper{
+    text-align: center;
+  }
+
+  input{
+    font-size: 1.5rem;
+    border: unset;
+    background-color: white;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    max-width: 200px;
+    text-align: center;
+
+  }
+  @media screen and (max-width: 768px){
+    &__input{
+    flex-direction: column;
+  }
+    .input-group-append{
+      &:after{
+        display: none;
+      }
+    }
+
+
+  }
+  label{
+    display: block;
+  }
+
+
+}

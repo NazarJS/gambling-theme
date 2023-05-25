@@ -1,0 +1,13 @@
+.not-found-page{
+    &__wrap{
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+      align-items: center;
+      justify-items: center;
+      padding: 10% 0;
+    }
+  &__col{
+    display: flex;
+    flex-direction: column;
+  }
+}

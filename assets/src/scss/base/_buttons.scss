@@ -1,0 +1,140 @@
+.ui-btn {
+    display: inline-block;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.3;
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+    cursor: pointer;
+
+    @media(max-width:1024px) {
+        padding: 12px 16px !important;
+        font-size: 14px !important;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &__register {
+        color: var(--btn-color-register);
+        background-color: var(--bg-color-register);
+    }
+
+    &__download {
+        color: var(--btn-color-download);
+        background-color: var(--bg-color-download);
+    }
+
+    &__android {
+        color: var(--btn-color-android);
+        background-color: var(--btn-bg-android);
+
+        .ui-btn__subtitle {
+            color: var(--btn-color-android);
+            opacity: 0.5;
+        }
+    }
+
+    &__ios {
+        color: var(--btn-color-ios);
+        background-color: var(--btn-bg-ios);
+
+        .ui-btn__subtitle {
+            color: var(--btn-color-ios);
+            opacity: 0.5;
+        }
+
+        .ui-icon {
+            fill: var(--btn-color-ios);
+        }
+    }
+
+    &__icon {
+        display: inline-block;
+        padding: 8px 38px;
+        border-radius: var(--border-radius);
+        transition: 0.3s;
+
+        @media(max-width:576px) {
+            padding: 8px 22px;
+        }
+
+        @media(max-width:400px) {
+            padding: 8px 15px;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+        
+
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 12px;
+
+            @media(max-width:576px) {
+                margin-right: 8px;
+            }
+
+            @media(max-width:400px) {
+                margin-right: 6px;
+            }
+        }
+    }
+
+    &__sign {
+        display: inline-block;
+        width: 100%;
+        max-width: 308px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 32px;
+        font-weight: 700;
+        color: #2D7CF2;
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            max-width: 110px;
+            margin-left: 16px;
+            vertical-align: middle;
+        }
+    }
+
+    &__name {
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: 700;
+
+        @media(max-width:1024px) {
+            font-size: 14px;
+        }
+
+        @media(max-width:400px) {
+            font-size: 10px;
+        }
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: 14px;
+      
+
+        @media(max-width:1024px) {
+            font-size: 12px;
+        }
+
+        @media(max-width:400px) {
+            font-size: 10px;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.fixed-download {
+  position: fixed;
+  width: 100%;
+  display: none;
+  left: 0;
+  bottom: 5px;
+  z-index: 20;
+
+  &.show {
+    display: block;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    border:1px solid #ffffff38;
+  }
+
+
+  &__body {
+    display: flex;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__bonus {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__logo {
+    margin-right: 8px;
+    max-width: 44px;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+  .btn{
+    padding: 12px;
+    background-color: white;
+  }
+}

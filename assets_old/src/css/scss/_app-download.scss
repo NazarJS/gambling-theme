@@ -1,0 +1,23 @@
+.app-platform-download{
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  margin-bottom: 10px;
+
+  &__icon{
+    display: flex;
+    justify-content: center;
+    img{
+      max-height: 65px;
+      width: auto;
+      padding: 10px 0;
+    }
+
+  }
+  &__button-wrap{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+
+  }
+
+}

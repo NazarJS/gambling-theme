@@ -1,0 +1,19 @@
+{
+  "name": "mobile-theme",
+  "version": "2.0.0",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yankazimirchick/latte-wordpress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yankazimirchick/latte-wordpress/issues"
+  },
+  "homepage": "https://github.com/yankazimirchick/latte-wordpress#readme"
+}
