@@ -3,15 +3,15 @@
     "title": "Main register",
     "fields": [
         {
-            "key": "field_646f2a6e8a85a",
-            "label": "subtitle",
-            "name": "subtitle",
+            "key": "field_6474d6a9e6d71",
+            "label": "bonus info",
+            "name": "bonus_info",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "25",
                 "class": "",
                 "id": ""
             },
@@ -22,15 +22,15 @@
             "maxlength": ""
         },
         {
-            "key": "field_646f2a878a85b",
-            "label": "Title",
-            "name": "title",
+            "key": "field_6474d6e0d0596",
+            "label": "bonus info second",
+            "name": "bonus_info_second",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "25",
                 "class": "",
                 "id": ""
             },
@@ -39,21 +39,6 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
-        },
-        {
-            "key": "field_646f2a9b8a85c",
-            "label": "link sign up",
-            "name": "link_sign_up",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
         },
         {
             "key": "field_646f2c2a2aaef",
@@ -64,7 +49,26 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_646f2a6e8a85a",
+            "label": "subtitle",
+            "name": "subtitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -83,7 +87,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -92,6 +96,40 @@
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
+        },
+        {
+            "key": "field_646f2a878a85b",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_646f2a9b8a85c",
+            "label": "link sign up",
+            "name": "link_sign_up",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         },
         {
             "key": "field_646f2e0203ddb",
@@ -126,5 +164,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1685008229
+    "modified": 1685379476
 }

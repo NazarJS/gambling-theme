@@ -1,13 +1,9 @@
 <?php
-// $main_title       = get_field( 'main_title' );
-// //$description      = get_field( 'description' );
-// $main_image       = get_field( 'main_image' );
-// $steps            = get_field( 'steps' );
-// $enable_microdata = get_field( 'enable_microdata' ) ?? false;
 
 $title = get_field( 'title' );
-$txt = get_field( 'txt' );
+$description = get_field( 'description' );
 $android_button = get_field('button_android');
+$ios_button = get_field('button_ios');
 $image = get_field('image');
 
 echo acf_block_before( 'MainScreen', $is_preview );
@@ -22,59 +18,30 @@ echo acf_block_before( 'MainScreen', $is_preview );
           <div class="col-md-6">
             <div class="main-screen__wrap">
               <div class="main-screen__info">
+
+              <?php if ( ! empty( $title ) ): ?>
                 <h1>
-                    <? echo $title ?>
+                    <?php echo $title ?>
                 </h1>
+				      <?php endif; ?>
+                
               </div>
   
               <div class="main-screen__txt">
-                <? echo $txt;
-                 ?>
+                <?php echo $description ?>
               </div>
                 
               <div class="main-screen__btns">
-                <!-- <a href="#" class="ui-btn__icon ui-btn__android">
-                  <img src="./images/flat-color-icons_android-os.png" alt="alt">
-  
-                  <span class="ui-btn__name">
-                    Download
-  
-                    <span class="ui-btn__subtitle">
-                      for Android
-                    </span>
-                  </span>
-                </a>
-  
-                <a href="#" class="ui-btn__icon ui-btn__ios">
-                  <img src="./images/Icons.png" alt="alt">
-  
-                  <span class="ui-btn__name">
-                    Download
-  
-                    <span class="ui-btn__subtitle">
-                      for IOS
-                    </span>
-                  </span>
-                </a> -->
 
-                <?
-                  echo get_button( $android_button['url'], $android_button['title'], 'ui-btn__icon ui-btn__android', '' );
-                 ?>
+              <?php if ( ! empty( $android_button['url'] ) && ! empty( $android_button['title'] ) ): ?>
+					      <?=  get_button( $android_button['url'], $android_button['title'], 'ui-btn__icon ui-btn__android','', true ); ?>
+				      <?php endif; ?>
 
-                
+              <?php if ( ! empty( $ios_button['url'] ) && ! empty( $ios_button['title'] ) ): ?>
+					      <?=  get_button( $ios_button['url'], $ios_button['title'], 'ui-btn__icon ui-btn__ios','', true ); ?>
+				      <?php endif; ?>
+                 
               </div>
-
-              <?php
-
-                // if ( ! empty( $first_header_button['url'] ) || ! empty( $first_header_button['title'] ) ) {
-            
-                // }
-
-                // if ( ! empty( $second_header_button['url'] ) || ! empty( $second_header_button['title'] ) ) {
-                // echo get_button( $second_header_button['url'], $second_header_button['title'], ' ui-btn__download ui-btn ', 'download' );
-                // }
-
-              ?>
             </div>
           </div>
 

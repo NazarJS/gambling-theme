@@ -16,9 +16,12 @@ $second = get_field( 'second_col' );
                 <div class="pros-cons__status">
 
                 </div>
-                <h2>
-                    <?= $first['title'] ?>
-                </h2>
+
+                <?php if ( ! empty( $first['title'] ) ): ?>
+                  <h1>
+                      <?php echo $first['title'] ?>
+                  </h1>
+				        <?php endif; ?>
               </div>
 
               <ul class="pros-cons__list">
@@ -37,9 +40,11 @@ $second = get_field( 'second_col' );
                             <div class="pros-cons__status">
 
                             </div>
-                            <h2>
-                                <?= $second['title'] ?>
-                            </h2>
+                            <?php if ( ! empty( $second['title'] ) ): ?>
+                              <h1>
+                                  <?php echo $second['title'] ?>
+                              </h1>
+				                    <?php endif; ?>
                         </div>
 
                         <ul class="pros-cons__list">

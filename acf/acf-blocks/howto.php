@@ -16,7 +16,7 @@ if ( $enable_microdata ):?>
         <div class="manual" >
             <div class="manual__title">
             <?php if ( ! empty( $main_title ) ): ?>
-                <h2><?= $main_title ?></h2>
+                <h2><?php echo $main_title ?></h2>
             <?php endif; ?>
             </div>
 

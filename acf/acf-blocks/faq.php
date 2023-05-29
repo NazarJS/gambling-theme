@@ -2,7 +2,7 @@
 $faq = get_field( 'faq' );
 // $enable_microdata = get_field( 'enable_microdata' ) ?? false;
 $count = 1;
-$close_faq = get_field('close_faq') ?? false;
+//s$close_faq = get_field('close_faq') ?? false;
 
 echo acf_block_before( 'FAQ', $is_preview );
 
