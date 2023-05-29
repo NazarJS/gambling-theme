@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "game-owner-blocks/bettertoc",
+  "version": "0.1.0",
+  "title": "Bettertoc",
+  "category": "game-owner-cat",
+  "icon": "clipboard",
+  "description": "Example block scaffolded with Create Block tool.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "ListToggle": {
+      "type": "boolean",
+      "default": "false"
+    },
+    "ListTitle": {
+      "type": "string",
+      "default": "Page Navigation"
+    },
+    "ListType": {
+      "type": "string",
+      "enum": [
+        "ol",
+        "ul"
+      ],
+      "default": "ul"
+    },
+    "SelectedHeading": {
+      "type": "string",
+      "enum": [
+        "h2",
+        "all"
+      ],
+      "default": "h2"
+    },
+    "tocContent": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "textdomain": "bettertoc",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

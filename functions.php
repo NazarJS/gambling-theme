@@ -131,3 +131,6 @@ add_action('wp_footer', function () {
 	wp_dequeue_style('core-block-supports');
 });
 
+//Guten blocks
+
+require_once 'gutenberg-blocks/gutenberg-blocks-init.php';
