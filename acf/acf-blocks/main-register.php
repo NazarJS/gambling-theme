@@ -36,8 +36,9 @@ echo acf_block_before( 'main register', $is_preview );
                       <div class="main-register__circle"></div>
                         <?php echo $bonus_info_second  ?>
                       </div>
-                    </div>
-				          <?php endif; ?>               
+                    
+				          <?php endif; ?>    
+                  </div>           
 
                   <div class="main-register__subtitle">
                     <?php echo $subtitle ?>
@@ -60,10 +61,6 @@ echo acf_block_before( 'main register', $is_preview );
                     </div>
 				          <?php endif; ?>
                  
-
-                  <!-- <a href="how-to-link" class="main-register__how-to">
-                      How to Sign Up?
-                    </a>  -->
               </div>
             </div>
           </div>

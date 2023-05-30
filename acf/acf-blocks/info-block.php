@@ -17,24 +17,8 @@
           </h2>
         <?php endif; ?>
 
-        <div class="block-info__img">
-          <?php echo get_image($image)?>
-        </div>
 
-        <div class="block-info__txt">
-            <?php echo $txt ?>
-        </div>
-
-        <div class="block-info__buttons">
-
-          <?php
-             echo get_button( $infoRegister['url'], $infoRegister['title'], 'ui-btn ui-btn__register', '' );
-          ?>
-
-          <?php     
-             echo get_button( $infoDownload['url'], $infoDownload['title'], 'ui-btn ui-btn__download', '' );
-          ?>
-        </div>
+        <InnerBlocks/>
 
     
       

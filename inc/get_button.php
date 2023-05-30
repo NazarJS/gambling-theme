@@ -8,11 +8,12 @@
  *
  * @return string
  */
+
 function get_button(  $url,  $title, string $class = '', string $rel = 'nofollow', bool $encode = false ): string {
 	if (empty($url) || empty($title)) {
 		return '';
 	}
-
+	$image_path = IMG_DIR;
 	$get_encode  = get_field( 'encode_site_links', 'options' ) ?? true;
 	$attr_target = ( get_field( 'attr_target', 'options' ) ) ? 'target="_blank"' : '';
 
@@ -84,7 +85,7 @@ function get_button(  $url,  $title, string $class = '', string $rel = 'nofollow
 						data-decoded-text='$url'
 						class='link-button $class'>
 						<svg class='ui-icon'>
-						  <use xlink:href='<?php ?>'></use>
+						  <use xlink:href='$image_path/footer-logo.png'></use>
 						</svg>
 						<span class='ui-btn__name'>
 							Download

@@ -11,19 +11,19 @@ if ( $enable_microdata ) {
 }
 ?>
     <div class="faq">
-     <div class="container">
+     
       <?php if(!empty($faq)): ?>
           <?php foreach ( $faq as $point ): ?>
             <details>
               <summary>
-                <h2 class="title-underline"><?= $point['question'] ?></h2>
+                <h3 class="title-underline"><?= $point['question'] ?></h3>
                 <div class="faq__arrow"></div>
               </summary>
               <p><?= ($enable_microdata) ? $point['answer'] : $point['answer_edit'] ?></p>
             </details>
           <?php	endforeach;	?>
         <?php endif;?>
-     </div>
+     
     </div>
 
    
