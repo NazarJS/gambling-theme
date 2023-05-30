@@ -27,11 +27,11 @@
 
         <div class="block-info__buttons">
 
-          <?
+          <?php
              echo get_button( $infoRegister['url'], $infoRegister['title'], 'ui-btn ui-btn__register', '' );
           ?>
 
-          <?     
+          <?php     
              echo get_button( $infoDownload['url'], $infoDownload['title'], 'ui-btn ui-btn__download', '' );
           ?>
         </div>

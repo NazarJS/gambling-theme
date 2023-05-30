@@ -49,15 +49,21 @@ echo acf_block_before( 'main register', $is_preview );
                    </h1>
 				          <?php endif; ?>
 
-                  
+                  <?php if ( ! empty( $button_sign['url'] ) && ! empty( $button_sign['title'] ) ): ?>
+					          <?=  get_button( $button_sign['url'], $button_sign['title'], 'ui-btn__sign','', true ); ?>
+				          <?php endif; ?>
 
-                  <?  echo get_button( $button_sign['url'], $button_sign['title'], 'ui-btn__sign', '' ); ?>
+               
+                  <?php if ( ! empty( $link_sign_up['url'] ) && ! empty( $link_sign_up['title'] ) ): ?>
+                    <div>
+                      <?=  get_button( $link_sign_up['url'], $link_sign_up['title'], 'main-register__how-to','', true ); ?>   
+                    </div>
+				          <?php endif; ?>
+                 
 
-                  <div>
-                    <a href="how-to-link" class="main-register__how-to">
+                  <!-- <a href="how-to-link" class="main-register__how-to">
                       How to Sign Up?
-                    </a>    
-                  </div>
+                    </a>  -->
               </div>
             </div>
           </div>

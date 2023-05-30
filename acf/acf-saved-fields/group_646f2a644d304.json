@@ -118,7 +118,7 @@
         },
         {
             "key": "field_646f2a9b8a85c",
-            "label": "link sign up",
+            "label": "button sign up",
             "name": "link_sign_up",
             "type": "link",
             "instructions": "",
@@ -133,7 +133,7 @@
         },
         {
             "key": "field_646f2e0203ddb",
-            "label": "button_sign",
+            "label": "link_sign",
             "name": "button_sign",
             "type": "link",
             "instructions": "",
@@ -164,5 +164,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1685379476
+    "modified": 1685439128
 }

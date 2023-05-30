@@ -102,6 +102,8 @@
         font-size: 14px;
         text-decoration: underline;
         color: var(--color-txt-white);
+        background: none;
+        cursor: pointer;
 
         &:hover {
             text-decoration: none;

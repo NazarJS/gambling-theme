@@ -77,34 +77,7 @@ if ( ! empty( $body_metrics_code ) ) {
 
 
 <div id="page" class="site">
-    <!-- <header id="masthead" class="site-header header">
-        <div class="container">
-			<div class="header-container">
-				<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<?php if ( CUSTOM_HEADER_LOGO || CUSTOM_SITE_NAME ): ?>
-							<?php if ( CUSTOM_HEADER_LOGO ): ?>
-								<?php echo get_image( CUSTOM_HEADER_LOGO ); ?>
-							<?php else: ?>
-								<p><?= CUSTOM_SITE_NAME; ?></p>
-							<?php endif; ?>
-							</a>
-				<?php endif; ?>
 
-				<div class="header-wrapper">
-						
-					<div class="header-wrap">
-						
-					</div>
-
-
-				</div>
-				<?php get_template_part( 'template-parts/header', 'buttons' ); ?>
-				<div class="header-burger" id ="burger">
-					<span class="header-burger-span"></span>
-				</div>
-			</div>
-        </div>
-    </header> -->
 
 	<header class="header" id="header">
     <div class="container">
@@ -113,9 +86,7 @@ if ( ! empty( $body_metrics_code ) ) {
           <div class="header-burger__span"></div>
         </div>
 
-        <!-- <a href="#" class="">
-          <img src="./images/Logo.png" alt="alt">
-        </a> -->
+       
 
 		<a class="header__logo logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<?php if ( CUSTOM_HEADER_LOGO || CUSTOM_SITE_NAME ): ?>

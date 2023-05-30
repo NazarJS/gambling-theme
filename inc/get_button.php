@@ -83,7 +83,9 @@ function get_button(  $url,  $title, string $class = '', string $rel = 'nofollow
 						data-decoded='$data_encode'
 						data-decoded-text='$url'
 						class='link-button $class'>
-						<img src='./images/flat-color-icons_android-os.png' alt='alt'>
+						<svg class='ui-icon'>
+						  <use xlink:href='<?php ?>'></use>
+						</svg>
 						<span class='ui-btn__name'>
 							Download
 	
