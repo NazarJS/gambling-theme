@@ -1,0 +1,31 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-better-toc {
+	//border: 1px dotted #f00;
+  &__anchor-class{
+	font-size: var(--wp--preset--font-size--small);
+	margin:  0;
+  }
+  &__grid{
+	display: grid;
+	grid-template-columns: 15px 4fr 4fr 1fr;
+	gap: 10px;
+	margin: 5px 0;
+	border: 1px solid #dde6ff;
+	justify-content: center;
+  }
+  &__text{
+	border-color: #d1d1d1;
+  }
+
+}
+
+.wp-block-create-block-bettertoc button:focus{
+	color: black !important;
+}
+
+

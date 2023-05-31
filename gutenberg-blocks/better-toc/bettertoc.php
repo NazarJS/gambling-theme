@@ -10,6 +10,7 @@ function render_better_toc( $attributes, $content, $block ) {
 		<div class="content__title">
 			<h2>
 				<?= $attributes['ListTitle']; ?>
+
 			</h2>
 		</div>
 
