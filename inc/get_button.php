@@ -84,9 +84,7 @@ function get_button(  $url,  $title, string $class = '', string $rel = 'nofollow
 						data-decoded='$data_encode'
 						data-decoded-text='$url'
 						class='link-button $class'>
-						<svg class='ui-icon'>
-						  <use xlink:href='$image_path/footer-logo.png'></use>
-						</svg>
+						
 						<span class='ui-btn__name'>
 							Download
 	
@@ -144,4 +142,6 @@ function get_button(  $url,  $title, string $class = '', string $rel = 'nofollow
 	return $btn;
 }
 
-
+// <svg class='ui-icon'>
+// 						  <use xlink:href='$image_path/footer-logo.png'></use>
+// 						</svg>

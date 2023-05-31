@@ -17,7 +17,7 @@ echo acf_block_before( 'MainScreen', $is_preview );
         <div class="row">
           <div class="col-md-6">
             <div class="main-screen__wrap">
-              <div class="main-screen__info">
+              <div >
 
               <?php if ( ! empty( $title ) ): ?>
                 <h1>
@@ -34,11 +34,11 @@ echo acf_block_before( 'MainScreen', $is_preview );
               <div class="main-screen__btns">
 
               <?php if ( ! empty( $android_button['url'] ) && ! empty( $android_button['title'] ) ): ?>
-					      <?=  get_button( $android_button['url'], $android_button['title'], 'ui-btn__icon ui-btn__android','', true ); ?>
+					      <?php echo get_button( $android_button['url'], $android_button['title'], 'ui-btn__icon ui-btn__android','', true ); ?>
 				      <?php endif; ?>
 
               <?php if ( ! empty( $ios_button['url'] ) && ! empty( $ios_button['title'] ) ): ?>
-					      <?=  get_button( $ios_button['url'], $ios_button['title'], 'ui-btn__icon ui-btn__ios','', true ); ?>
+					      <?php echo  get_button( $ios_button['url'], $ios_button['title'], 'ui-btn__icon ui-btn__ios','', true ); ?>
 				      <?php endif; ?>
                  
               </div>
@@ -53,6 +53,6 @@ echo acf_block_before( 'MainScreen', $is_preview );
         </div>
       </div>
     </div>
-  </div>
+</div>
 <?php
 echo acf_block_after( $is_preview );

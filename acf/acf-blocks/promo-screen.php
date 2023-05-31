@@ -1,5 +1,6 @@
 <?php
-
+$image_path = IMG_DIR;
+$promocode = get_field('promo_code');
 $title = get_field( 'title' );
 $subtitle = get_field( 'subtitle' );
 $description_info = get_field('description_info');
@@ -44,22 +45,29 @@ echo acf_block_before( 'main register', $is_preview );
                     <?php echo $subtitle ?>
                   </div>
 
-                  <?php if ( ! empty( $title ) ): ?>
-					          <h1>
-                      <?php echo $title ?>
-                   </h1>
-				          <?php endif; ?>
+                 
 
-                  <?php if ( ! empty( $button_sign['url'] ) && ! empty( $button_sign['title'] ) ): ?>
-					          <?php  get_button( $button_sign['url'], $button_sign['title'], 'ui-btn__sign','', true ); ?>
-				          <?php endif; ?>
+                    <div class="promocode">
+                        <input class="main-promocode" type="text" id="main-promocode" value="<?php echo $promocode ?>" disabled="" data-promocode="<?php echo $promocode ?>">
+                        
+                        <div class="promocode__wrap">
+                            <div class="promocode__btn">
+                                <img src="IMG_DIR/Group.png" alt="alt">
+                            </div>
+
+                            <div class="promocode__txt">
+                                Click to copy
+                            </div>
+                            
+                        </div>
+                    </div>
 
                
                   <?php if ( ! empty( $link_sign_up['url'] ) && ! empty( $link_sign_up['title'] ) ): ?>
                     <div>
-                      <?php  get_button( $link_sign_up['url'], $link_sign_up['title'], 'main-register__how-to','', true ); ?>   
+                      <?=  get_button( $link_sign_up['url'], $link_sign_up['title'], 'main-register__how-to','', true ); ?>   
                     </div>
-				          <?php endif; ?>
+				  <?php endif; ?>
                  
               </div>
             </div>

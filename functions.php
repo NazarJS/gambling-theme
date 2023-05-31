@@ -105,6 +105,7 @@ require_once 'inc/load-post-ajax.php';
 require_once 'inc/comment-list.php';
 require_once 'inc/comment-rating.php';
 require_once 'inc/get_button.php';
+require_once 'inc/get-rating.php';
 require_once 'inc/toc-function.php';
 require_once 'inc/widgets.php';
 require_once 'inc/action.php';
