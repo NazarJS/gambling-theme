@@ -291,14 +291,17 @@
 }
 
 .menu-item-has-children {
+    position:relative;
+
     &::after {
-        content: "";
+        position:absolute;
+        content: "\1F893";
         display: inline-block;
         width: 10px;
         height: 10px;
-        background: url(../images/svg/arrow.svg) 0 0/cover no-repeat;
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
+        top: 10%;
+        font-size: 26px;
+        color: var(--color-menu);
     }
 
         &::before {

@@ -42,7 +42,7 @@ $link_for_mobile_link = get_field( 'link_for_mobile_link', 'options' ) ?? '';
 				<?php endif; ?>
 
           <div class="footer-social">
-            <div class="footer-social__item">
+            <!-- <div class="footer-social__item">
               <svg class="ui-icon">
                 <use xlink:href="http://game-owner.loc/wp-content/themes/game-owner/assets/dist/images/svg/header-sprite.svg#register-img"></use>
               </svg>
@@ -58,6 +58,16 @@ $link_for_mobile_link = get_field( 'link_for_mobile_link', 'options' ) ?? '';
               <svg class="ui-icon">
                 <use xlink:href="http://game-owner.loc/wp-content/themes/game-owner/assets/dist/images/svg/header-sprite.svg#register-img"></use>
               </svg>
+            </div> -->
+
+            <div class="socials-icons">
+              <ul class="socials-icons__wrap">
+                  <?php
+                  foreach ( $social_links as $social ) {
+                      echo ' <li class="footer-social__item"><a href="' . $social['link'] . '"><img src="' . IMG_DIR . '/socials/' . $social['network'] . '.svg' . '" alt="alt" loading="lazy"></a></li>';
+                  }
+                  ?>
+              </ul>
             </div>
           </div>
         </div>

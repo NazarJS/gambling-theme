@@ -115,6 +115,10 @@
         flex-direction: column;
         justify-content: center;
         height: 100%;
+
+        @media(max-width:1024px) {
+            margin-top: 16px;
+        }
     }
 
     &__txt {

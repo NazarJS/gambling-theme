@@ -177,4 +177,11 @@
             border-radius: 12px;
         }
     }
+
+    .socials-icons {
+        &__wrap {
+            display: flex;
+            gap: 16px;
+        }
+    }
 }

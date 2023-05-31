@@ -1,17 +1,36 @@
 {
-    "key": "group_646f2a644d304",
-    "title": "Main screen",
+    "key": "group_6475eb8d9055c",
+    "title": "Promo screen",
     "fields": [
         {
-            "key": "field_6474d6a9e6d71",
-            "label": "Bonus info",
+            "key": "field_6475eb967ba6e",
+            "label": "promo code",
+            "name": "promo_code",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 12345,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6475efa833b3d",
+            "label": "bonus info",
             "name": "bonus_info",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "25",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -22,15 +41,15 @@
             "maxlength": ""
         },
         {
-            "key": "field_6474d6e0d0596",
-            "label": "Bonus info second",
+            "key": "field_6475efc245e6f",
+            "label": "bonus info second",
             "name": "bonus_info_second",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "25",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -41,7 +60,45 @@
             "maxlength": ""
         },
         {
-            "key": "field_646f2c2a2aaef",
+            "key": "field_6475efd34e868",
+            "label": "subtitle",
+            "name": "subtitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6475efe91332f",
+            "label": "description info",
+            "name": "description_info",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "",
+            "delay": 0
+        },
+        {
+            "key": "field_6475effb77ab3",
             "label": "Title info",
             "name": "title_info",
             "type": "text",
@@ -49,7 +106,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -60,81 +117,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_646f2a6e8a85a",
-            "label": "Subtitle",
-            "name": "subtitle",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_646f2c3908766",
-            "label": "Description info",
-            "name": "description_info",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_646f2a878a85b",
-            "label": "Title",
-            "name": "title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "100",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_646f2a9b8a85c",
-            "label": "Button sign up",
+            "key": "field_6475f00997971",
+            "label": "link_sign",
             "name": "link_sign_up",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "100",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
-        },
-        {
-            "key": "field_646f2e0203ddb",
-            "label": "Link_sign",
-            "name": "button_sign",
             "type": "link",
             "instructions": "",
             "required": 0,
@@ -152,7 +137,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/main-screen"
+                "value": "acf\/promo-screen"
             }
         ]
     ],
@@ -164,5 +149,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1685610273
+    "modified": 1685451144
 }
