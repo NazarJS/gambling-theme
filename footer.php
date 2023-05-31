@@ -29,70 +29,20 @@ $link_for_mobile_text = get_field( 'link_for_mobile_text', 'options' ) ?? '';
 $link_for_mobile_link = get_field( 'link_for_mobile_link', 'options' ) ?? '';
 ?>
 
-<!-- 
-<footer>
-    <div class="footer">
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-container__item footer-container__item--first">
-					<?php if ( $footer_logo ): ?>
-                        <div class="footer-logo">
-                            <a href="/">
-								<?= $footer_logo ?>
-                            </a>
-                        </div>
-					<?php endif; ?>
-	                
-                    <div class="socials-icons">
-                        <ul class="socials-icons__wrap">
-			                <?php
-			                foreach ( $social_links as $social ) {
-				                echo ' <li class="socials-icons__item"><a href="' . $social['link'] . '"><img src="' . IMG_DIR . '/socials/' . $social['network'] . '.svg' . '" alt="alt" loading="lazy"></a></li>';
-			                }
-			                ?>
-                        </ul>
-                    </div>
-                </div>
-
-
-                <div class="footer-container__item">
-					<?php get_template_part( 'template-parts/footer', 'payments' ); ?>
-
-                </div>
-	            <?php if ( function_exists( 'dynamic_sidebar' ) && is_active_sidebar( 'footer-top' ) ): ?>
-                    <div class="footer-container__item">
-			            <?php dynamic_sidebar( 'footer-top' ); ?>
-                    </div>
-	            <?php endif; ?>
-				<?php if ( function_exists( 'dynamic_sidebar' ) && is_active_sidebar( 'footer-middle' ) ): ?>
-                    <div class="footer-container__item">
-						<?php dynamic_sidebar( 'footer-middle' ); ?>
-                    </div>
-				<?php endif; ?>
-				<?php if ( function_exists( 'dynamic_sidebar' ) && is_active_sidebar( 'footer-bottom' ) ): ?>
-                    <div class="footer-container__item">
-						<?php dynamic_sidebar( 'footer-bottom' ); ?>
-                    </div>
-				<?php endif; ?>
-
-				<?php get_template_part( 'template-parts/fixed', 'download' ); ?>
-            </div>
-        </div>
-    </div>
-    <div class="go-top hide"></div>
-</footer> -->
-
-
 <footer class="footer" id="footer">
     <div class="container">
          
         <div class="footer__container">
-          <a href="#" class="footer__logo">
-            <img src="./images/footer-logo.png" alt="alt" loading="lazy">
-          </a>
+        <?php if ( $footer_logo ): ?>
+              <div class="footer-logo">
+                  <a href="/">
+                    <?= $footer_logo ?>
+                  </a>
+              </div>
+				<?php endif; ?>
 
           <div class="footer-social">
-            <div class="footer-social__item">
+            <!-- <div class="footer-social__item">
               <svg class="ui-icon">
                 <use xlink:href="http://game-owner.loc/wp-content/themes/game-owner/assets/dist/images/svg/header-sprite.svg#register-img"></use>
               </svg>
@@ -108,6 +58,16 @@ $link_for_mobile_link = get_field( 'link_for_mobile_link', 'options' ) ?? '';
               <svg class="ui-icon">
                 <use xlink:href="http://game-owner.loc/wp-content/themes/game-owner/assets/dist/images/svg/header-sprite.svg#register-img"></use>
               </svg>
+            </div> -->
+
+            <div class="socials-icons">
+              <ul class="socials-icons__wrap">
+                  <?php
+                  foreach ( $social_links as $social ) {
+                      echo ' <li class="socials-icons__item"><a href="' . $social['link'] . '"><img src="' . IMG_DIR . '/socials/' . $social['network'] . '.svg' . '" alt="alt" loading="lazy"></a></li>';
+                  }
+                  ?>
+              </ul>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@
 
 $title = get_field('banner_title');
 $bonus = get_field('banner_bonus');
+$button = get_field('button');
 
 
 echo acf_block_before( 'Banner', $is_preview );
@@ -16,10 +17,11 @@ echo acf_block_before( 'Banner', $is_preview );
             <?= $bonus ?>  
         </div>
 
-        <a href="#" class="ui-btn__sign">
-            Sign Up
-            <img src="./images/Logo.png" alt="alt" loading="lazy">
-        </a>
+        <?php if ( ! empty( $button['url'] ) && ! empty( $button['title'] ) ): ?>
+            <div>
+                <?=  get_button( $button['url'], $button['title'], 'ui-btn__sign','', true ); ?>   
+            </div>
+		<?php endif; ?>
         </div>
      </div>
 

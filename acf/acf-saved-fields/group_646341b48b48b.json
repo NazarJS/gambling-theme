@@ -47,8 +47,8 @@
         },
         {
             "key": "field_6463481ed0663",
-            "label": "Info txt",
-            "name": "info_txt",
+            "label": "info_description",
+            "name": "info_description",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -93,6 +93,25 @@
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_647504e6f0299",
+            "label": "reverse bg",
+            "name": "boolean",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -112,5 +131,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1685011417
+    "modified": 1685392438
 }

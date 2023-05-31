@@ -1,12 +1,36 @@
 {
-    "key": "group_646f2a644d304",
-    "title": "Main register",
+    "key": "group_6475fc431eb9a",
+    "title": "Mobile screen",
     "fields": [
         {
-            "key": "field_6474d6a9e6d71",
-            "label": "bonus info",
-            "name": "bonus_info",
-            "type": "text",
+            "key": "field_64770260908f8",
+            "label": "image",
+            "name": "image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_647712794c632",
+            "label": "rating",
+            "name": "rating",
+            "type": "number",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -19,31 +43,14 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "maxlength": ""
+            "min": "",
+            "max": "",
+            "step": ""
         },
         {
-            "key": "field_6474d6e0d0596",
-            "label": "bonus info second",
-            "name": "bonus_info_second",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "25",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_646f2c2a2aaef",
-            "label": "Title info",
-            "name": "title_info",
+            "key": "field_6475fc59dd7fd",
+            "label": "Title",
+            "name": "title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -60,28 +67,39 @@
             "maxlength": ""
         },
         {
-            "key": "field_646f2a6e8a85a",
-            "label": "subtitle",
-            "name": "subtitle",
-            "type": "text",
+            "key": "field_647701b57111e",
+            "label": "ios button",
+            "name": "ios_button",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "25",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "return_format": "array"
         },
         {
-            "key": "field_646f2c3908766",
-            "label": "description info",
-            "name": "description_info",
+            "key": "field_647700ae44077",
+            "label": "android button",
+            "name": "android_button",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_6475fc64dd7fe",
+            "label": "description",
+            "name": "description",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -98,49 +116,15 @@
             "delay": 0
         },
         {
-            "key": "field_646f2a878a85b",
-            "label": "Title",
-            "name": "title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "100",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_646f2a9b8a85c",
-            "label": "button sign up",
-            "name": "link_sign_up",
+            "key": "field_64770327ba4d4",
+            "label": "button install",
+            "name": "button_install",
             "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "100",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
-        },
-        {
-            "key": "field_646f2e0203ddb",
-            "label": "link_sign",
-            "name": "button_sign",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -152,7 +136,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/main-register"
+                "value": "acf\/mobile-screen"
             }
         ]
     ],
@@ -164,5 +148,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1685439128
+    "modified": 1685525189
 }

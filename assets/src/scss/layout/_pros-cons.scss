@@ -50,6 +50,12 @@
         font-weight: 700;
         color: #00B05C;
 
+        &:first-child {
+            // padding-top: 0;
+            // padding-left: 0;
+            padding-right: 0;
+        }
+
         &:nth-child(1n) {
             background-color: #ffffff;
         }
@@ -91,5 +97,14 @@
         display: inline-block;
         margin-bottom: 0;
         color: var(--color-txt-white);
+    }
+
+    &__list {
+        padding: 16px 16px 0 16px;
+        margin: -16px -16px 0 -16px;
+
+        h1, h2, h3, h4, h5, p {
+            padding: 16px 32px;
+        }
     }
 }

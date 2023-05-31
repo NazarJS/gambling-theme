@@ -4,6 +4,7 @@
     background-color: var(--bg-header);
 
     &__logo {
+        max-width: 140px;
         margin-right: 42px;
         line-height: 1;
 
@@ -277,6 +278,10 @@
             }
         }
         
+    }
+
+    .header-menu {
+        margin-bottom: -10px;
     }
 
 

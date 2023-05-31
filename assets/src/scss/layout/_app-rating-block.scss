@@ -1,0 +1,53 @@
+
+.app-rating-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__item {
+    margin-right: 15px;
+  }
+
+  &__number {
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    padding: 0 25px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+  }
+
+  &__stars {
+    position: relative;
+    letter-spacing: -3px;
+    width: 8.5rem;
+    color: var(--color-primary);
+    font-size: 2rem;
+    line-height: 2rem;
+
+    span {
+      letter-spacing: -3px;
+      white-space: nowrap;
+
+      &:last-child {
+        position: absolute;
+        left: 0;
+        top: 0;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+  }
+
+  &__count-rating {
+
+  }
+
+  &__downloads {
+
+  }
+}
+
+
+
