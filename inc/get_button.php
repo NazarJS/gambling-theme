@@ -61,7 +61,9 @@ function get_button(  $url,  $title, string $class = '', string $rel = 'nofollow
 						data-decoded='$data_encode'
 						data-decoded-text='$url'
 						class='link-button $class'>
-						<img src='./images/flat-color-icons_android-os.png' alt='alt'>
+						<svg class='ui-icon'>
+							<use xlink:href='$image_path/svg/symbols.svg#android'></use>
+						</svg>
 						<span class='ui-btn__name'>
 							Download
 	
@@ -84,7 +86,9 @@ function get_button(  $url,  $title, string $class = '', string $rel = 'nofollow
 						data-decoded='$data_encode'
 						data-decoded-text='$url'
 						class='link-button $class'>
-						
+						<svg class='ui-icon'>
+							<use xlink:href='$image_path/svg/symbols.svg#ios'></use>
+						</svg>
 						<span class='ui-btn__name'>
 							Download
 	

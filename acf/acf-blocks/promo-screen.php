@@ -1,5 +1,4 @@
 <?php
-$image_path = IMG_DIR;
 $promocode = get_field('promo_code');
 $title = get_field( 'title' );
 $subtitle = get_field( 'subtitle' );
@@ -7,7 +6,6 @@ $description_info = get_field('description_info');
 $title_info = get_field('title_info');
 $button_sign = get_field('button_sign');
 $link_sign_up = get_field('link_sign_up');
-
 $bonus_info = get_field('bonus_info');
 $bonus_info_second = get_field('bonus_info_second');
 

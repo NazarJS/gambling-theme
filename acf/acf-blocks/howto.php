@@ -1,6 +1,5 @@
 <?php
 $main_title       = get_field( 'main_title' );
-//$description      = get_field( 'description' );
 $main_image       = get_field( 'main_image' );
 $steps            = get_field( 'steps' );
 $enable_microdata = get_field( 'enable_microdata' ) ?? false;

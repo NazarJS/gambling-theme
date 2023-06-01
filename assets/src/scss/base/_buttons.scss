@@ -36,6 +36,11 @@
             color: var(--btn-color-android);
             opacity: 0.5;
         }
+
+        .ui-icon {
+            
+            fill: var(--btn-svg-android);
+        }
     }
 
     &__ios {
@@ -48,7 +53,8 @@
         }
 
         .ui-icon {
-            fill: var(--btn-color-ios);
+            
+            fill: var(--btn-svg-ios);
         }
     }
 
@@ -57,6 +63,13 @@
         padding: 8px 38px;
         border-radius: var(--border-radius);
         transition: 0.3s;
+
+        .ui-icon {
+            display: inline-block;
+            vertical-align: middle;
+            width: 45px;
+            height: 54px;
+        }
 
         @media(max-width:576px) {
             padding: 8px 22px;
@@ -114,6 +127,7 @@
         display: inline-block;
         vertical-align: middle;
         font-weight: 700;
+        text-align: left;
 
         @media(max-width:1024px) {
             font-size: 14px;

@@ -6,6 +6,8 @@
     $image = get_field('image');
     $button_install = get_field('button_install');
     $rating = get_field('rating');
+    $people_counter = get_field('people_counter');
+    $people_download = get_field('people_download');
 
     echo acf_block_before( 'Main Screen', $is_preview );
  ?>
@@ -24,13 +26,28 @@
                         <?php echo get_image($image)?>
                     </div>
 
-                    <!-- raiting -->
                     <div class="mobile-screen__rating">
                         <?php if ( ! empty( $rating )): ?>
                             
                             <?php echo get_rating($rating) ?>   
                             
                         <?php endif; ?>
+
+                       <div class="mobile-screen__wrap">
+                       <?php if ( ! empty( $rating )): ?>
+                            
+                            <div class="mobile-screen__stat">
+                              <?php echo $rating ?> / 5 
+                            </div> 
+                            
+                            
+                            <div class="mobile-screen__counter">
+                            <img src="<?=IMG_DIR?>/counter-img.png" alt="alt">
+                             (<?php echo $people_counter ?>)
+                            </div>
+                            
+                        <?php endif; ?>
+                       </div>
                     </div>
 
               </div>
@@ -56,7 +73,8 @@
                 <?php endif; ?>
 
                 <div class="mobile-screen__status">
-                  Downloaded: 35 129
+                <img src="<?=IMG_DIR?>/dowload-rating.png" alt="alt">
+                  Downloaded: <?php echo $people_download ?>
                 </div>
               </div>
             </div>
