@@ -291,6 +291,26 @@ add_action( 'acf/init', function () {
 			'icon'            => '<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="_x32_" version="1.1" viewBox="0 0 512 512"><path d="M34.4 156.1h78v78.1h43.7v-78.1h78.1v-43.7h-78.1V34.3h-43.7v78.1H34.3zM0 512h512V0L0 512zm418.7-134.2H287.6V334h131v43.8z" class="st0"/></svg>',
 			'mode'            => 'edit'
 		] );
+
+		acf_register_block_type( [
+			'name'            => 'promo-screen',
+			'title'           => 'promo-screen',
+			'description'     => 'promo-screen',
+			'category'        =>  'theme-category',
+			'render_template' => get_template_directory() . '/acf/acf-blocks/promo-screen.php',
+			'icon'            => '<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="_x32_" version="1.1" viewBox="0 0 512 512"><path d="M34.4 156.1h78v78.1h43.7v-78.1h78.1v-43.7h-78.1V34.3h-43.7v78.1H34.3zM0 512h512V0L0 512zm418.7-134.2H287.6V334h131v43.8z" class="st0"/></svg>',
+			'mode'            => 'edit'
+		] );
+
+		acf_register_block_type( [
+			'name'            => 'mobile-screen',
+			'title'           => 'mobile-screen',
+			'description'     => 'mobile-screen',
+			'category'        =>  'theme-category',
+			'render_template' => get_template_directory() . '/acf/acf-blocks/mobile-screen.php',
+			'icon'            => '<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="_x32_" version="1.1" viewBox="0 0 512 512"><path d="M34.4 156.1h78v78.1h43.7v-78.1h78.1v-43.7h-78.1V34.3h-43.7v78.1H34.3zM0 512h512V0L0 512zm418.7-134.2H287.6V334h131v43.8z" class="st0"/></svg>',
+			'mode'            => 'edit'
+		] );
 	}
 } );
 

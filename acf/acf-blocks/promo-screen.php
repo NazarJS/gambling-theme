@@ -47,6 +47,7 @@ echo acf_block_before( 'main register', $is_preview );
 
                  
 
+
                     <div class="promocode">
                         <input class="main-promocode" type="text" id="main-promocode" value="<?php echo $promocode ?>" disabled="" data-promocode="<?php echo $promocode ?>">
                         
@@ -62,16 +63,20 @@ echo acf_block_before( 'main register', $is_preview );
                         </div>
                     </div>
 
+
                
                   <?php if ( ! empty( $link_sign_up['url'] ) && ! empty( $link_sign_up['title'] ) ): ?>
                     <div>
+
                       
                       <a href="<?php echo $link_sign_up['url'] ?>" class="main-register__how-to">
                         <?php echo $link_sign_up['title'] ?>
                       </a> 
 
+
                     </div>
 				          <?php endif; ?>
+
                  
               </div>
             </div>
