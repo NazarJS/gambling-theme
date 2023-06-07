@@ -43,7 +43,9 @@
                             
                             <div class="mobile-screen__counter">
                             <img src="<?=IMG_DIR?>/counter-img.png" alt="alt">
+                            <?php if ( ! empty( $people_counter )): ?>
                              (<?php echo $people_counter ?>)
+                             <?php endif; ?>
                             </div>
                             
                         <?php endif; ?>

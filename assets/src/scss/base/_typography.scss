@@ -93,3 +93,49 @@ button:focus  {
 button {
   cursor: pointer;
 }
+
+.wp-block-table {
+
+  margin-bottom: 80px;
+  border-radius: 12px;
+  overflow: hidden;
+
+  @media(max-width:1024px) {
+    margin-bottom: 32px;
+  }
+
+  thead {
+    border: none;
+    tr {
+      border: none;
+      th {
+        padding: 16px 24px;
+        color: var(--color-txt-white);
+        background-color: var(--color-primary);
+        border: none;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      background-color: #fff;
+      &:nth-child(2n) {
+        background-color: #edf2fa;
+    }
+      td {
+        padding: 16px 24px;
+        border: none;
+        color: var(--color-txt-dark);
+
+        @media(max-width:1024px) {
+          font-size: 14px;
+        }
+
+        &:nth-of-type(2) {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

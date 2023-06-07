@@ -13,7 +13,7 @@ $payments_title = get_field( 'payments_title' );
         <div class="payment__wrap">
 			<?php foreach ( $payments as $payment ): ?>
                 <div class="payment__item">
-                    <img src="<?= get_template_directory_uri() ?>/assets/build/images/payment-methods/<?= $payment ?>.svg"
+                    <img src="<?= get_template_directory_uri() ?>/assets/dist/images/payments/<?= $payment ?>.svg"
                          class="payment__image" alt="<?= $payment ?>" loading="lazy">
                 </div>
 			<?php endforeach; ?>

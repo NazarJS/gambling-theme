@@ -75,7 +75,7 @@ $link_for_mobile_link = get_field( 'link_for_mobile_link', 'options' ) ?? '';
         </div>
 
         <div class="footer-banners">
-          <div class="footer-banners__item">
+          <!-- <div class="footer-banners__item">
             <img src="./images/image 12.png" alt="alt" loading="lazy">
           </div>
 
@@ -97,7 +97,9 @@ $link_for_mobile_link = get_field( 'link_for_mobile_link', 'options' ) ?? '';
 
           <div class="footer-banners__item">
             <img src="./images/image 12.png" alt="alt" loading="lazy">
-          </div>
+          </div> -->
+
+          <?php get_template_part( 'template-parts/footer', 'payments' ); ?>
 
           
         </div>

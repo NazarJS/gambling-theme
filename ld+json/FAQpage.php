@@ -2,10 +2,11 @@
 $faq = get_field( 'faq' );
 
 $entity_arr = [];
+
 foreach ( $faq as $item ) {
-  $question = str_replace('"', '`', $item['question']);
-  $answer = str_replace('"', '`', $item['answer']);
-  $entity_item = "
+	$question    =  wp_strip_all_tags(str_replace( '"', '`', $item['question'] ),true);
+	$answer      =  wp_strip_all_tags(str_replace( '"', '`', $item['answer'] ),true);
+	$entity_item = "
         {
             \"@type\": \"Question\",
             \"name\": \"{$question}\",
@@ -15,9 +16,12 @@ foreach ( $faq as $item ) {
             }
         }
         ";
-  array_push($entity_arr, $entity_item);
+	array_push( $entity_arr, $entity_item );
 }
+
+
 ?>
+<?php if(!empty($faq)):?>
 <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -27,3 +31,4 @@ foreach ( $faq as $item ) {
             ]
         }
 </script>
+<?php endif;
