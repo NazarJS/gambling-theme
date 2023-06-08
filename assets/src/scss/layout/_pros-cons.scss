@@ -41,8 +41,16 @@
     }
 
     &__title {
+        display: flex;
+        align-items: center;
         padding: 10px 32px;
         background-color: #00B05C;
+        font-size: 24px;
+        color: var(--color-txt-white);
+
+        @media(max-width:1024px) {
+            font-size: 20px;
+        }
     }
 
     li {

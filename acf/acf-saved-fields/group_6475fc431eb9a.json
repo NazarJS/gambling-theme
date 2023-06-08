@@ -117,14 +117,14 @@
         },
         {
             "key": "field_64770327ba4d4",
-            "label": "button install",
+            "label": "ancor link",
             "name": "button_install",
             "type": "link",
-            "instructions": "",
+            "instructions": "#how to start",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -132,14 +132,14 @@
         },
         {
             "key": "field_64786d17b4680",
-            "label": "people counter",
+            "label": "Number of votes",
             "name": "people_counter",
             "type": "number",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -153,14 +153,14 @@
         },
         {
             "key": "field_647870c1380f5",
-            "label": "People download",
+            "label": "Number of downloads",
             "name": "people_download",
             "type": "number",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -190,5 +190,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1685614812
+    "modified": 1686214049
 }

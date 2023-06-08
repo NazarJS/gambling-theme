@@ -1,4 +1,5 @@
 <?php
+$path = IMG_DIR;
 $promocode = get_field('promo_code');
 $title = get_field( 'title' );
 $subtitle = get_field( 'subtitle' );
@@ -51,7 +52,7 @@ echo acf_block_before( 'main register', $is_preview );
                         
                         <div class="promocode__wrap">
                             <div class="promocode__btn">
-                                <img src="IMG_DIR/Group.png" alt="alt">
+                                <img src="<?php echo $path ?>/Group.png" alt="alt">
                             </div>
 
                             <div class="promocode__txt">

@@ -22,25 +22,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_6023a391628e6",
-            "label": "Description",
-            "name": "description",
-            "type": "textarea",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
-        },
-        {
             "key": "field_6023a34f628e5",
             "label": "Main image (for microdata)",
             "name": "main_image",
@@ -184,5 +165,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1622711958
+    "modified": 1686213354
 }

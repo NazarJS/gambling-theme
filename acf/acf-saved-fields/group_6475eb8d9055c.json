@@ -3,25 +3,6 @@
     "title": "Promo screen",
     "fields": [
         {
-            "key": "field_6475eb967ba6e",
-            "label": "promo code",
-            "name": "promo_code",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": 12345,
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_6475efa833b3d",
             "label": "bonus info",
             "name": "bonus_info",
@@ -30,7 +11,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "25",
                 "class": "",
                 "id": ""
             },
@@ -49,7 +30,26 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6475effb77ab3",
+            "label": "Title info",
+            "name": "title_info",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -68,7 +68,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -87,30 +87,30 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
+            "default_value": "",
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
-            "default_value": "",
             "delay": 0
         },
         {
-            "key": "field_6475effb77ab3",
-            "label": "Title info",
-            "name": "title_info",
+            "key": "field_6475eb967ba6e",
+            "label": "promo code",
+            "name": "promo_code",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": 12345,
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -118,14 +118,14 @@
         },
         {
             "key": "field_6475f00997971",
-            "label": "link_sign",
+            "label": "ancor link",
             "name": "link_sign_up",
             "type": "link",
-            "instructions": "",
+            "instructions": "how to start",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -149,5 +149,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1685451144
+    "modified": 1686214593
 }

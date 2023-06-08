@@ -11,7 +11,7 @@ if ( $enable_microdata ):?>
     
 
    <div>
-   <div class="container">
+   
         <div class="manual" >
             <div class="manual__title">
             <?php if ( ! empty( $main_title ) ): ?>
@@ -50,7 +50,7 @@ if ( $enable_microdata ):?>
                 </div>  
             </div>
         </div>
-    </div>
+    
    </div>
 <?php
 echo acf_block_after( $is_preview );

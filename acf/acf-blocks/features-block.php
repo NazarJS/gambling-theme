@@ -18,9 +18,9 @@ $second = get_field( 'second_col' );
                 </div>
 
                 <?php if ( ! empty( $first['title'] ) ): ?>
-                  <h1>
+                  
                       <?php echo $first['title'] ?>
-                  </h1>
+                  
 				        <?php endif; ?>
               </div>
 
@@ -41,9 +41,9 @@ $second = get_field( 'second_col' );
 
                             </div>
                             <?php if ( ! empty( $second['title'] ) ): ?>
-                              <h1>
+                              
                                   <?php echo $second['title'] ?>
-                              </h1>
+                              
 				                    <?php endif; ?>
                         </div>
 

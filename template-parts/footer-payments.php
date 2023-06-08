@@ -3,7 +3,7 @@ $payments = get_field( 'ft_payments','option' );
 ?>
 
 <?php if(!empty($payments)):?>
-<div class="payment payment-footer">
+<div class="">
 	<div class="footer-banners">
 	<?php foreach ( $payments as $payment ): ?>
 		<div class="footer-banners__item">

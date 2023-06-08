@@ -117,23 +117,8 @@
             "maxlength": ""
         },
         {
-            "key": "field_646f2a9b8a85c",
-            "label": "Button sign up",
-            "name": "link_sign_up",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "100",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
-        },
-        {
             "key": "field_646f2e0203ddb",
-            "label": "Link_sign",
+            "label": "button_sign",
             "name": "button_sign",
             "type": "link",
             "instructions": "",
@@ -141,6 +126,21 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_646f2a9b8a85c",
+            "label": "ancor link",
+            "name": "link_sign_up",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
                 "class": "",
                 "id": ""
             },
@@ -164,5 +164,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1685610273
+    "modified": 1686214838
 }

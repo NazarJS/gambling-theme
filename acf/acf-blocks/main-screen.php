@@ -51,14 +51,16 @@ echo acf_block_before( 'main register', $is_preview );
 				          <?php endif; ?>
 
                   <?php if ( ! empty( $button_sign['url'] ) && ! empty( $button_sign['title'] ) ): ?>
-					          <?php  get_button( $button_sign['url'], $button_sign['title'], 'ui-btn__sign','', true ); ?>
+					          <?php echo get_button( $button_sign['url'], $button_sign['title'], 'ui-btn__sign','', true ); ?>
 				          <?php endif; ?>
 
                
                   <?php if ( ! empty( $link_sign_up['url'] ) && ! empty( $link_sign_up['title'] ) ): ?>
-                    <a href="<?php echo $link_sign_up['url'] ?>" class="main-register__how-to">
-                      <?php echo $link_sign_up['title'] ?>
-                    </a>   
+                    <div>
+                      <a href="<?php echo $link_sign_up['url'] ?>" class="main-register__how-to">
+                        <?php echo $link_sign_up['title'] ?>
+                      </a>  
+                    </div> 
 				          <?php endif; ?>
 
                   

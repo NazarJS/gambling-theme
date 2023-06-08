@@ -1,6 +1,7 @@
 <?php
 $faq = get_field( 'faq' );
 $count = 1;
+$enable_microdata = get_field('enable_microdata');
 
 echo acf_block_before( 'FAQ', $is_preview );
 

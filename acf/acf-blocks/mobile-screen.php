@@ -85,7 +85,6 @@
           <div class="col-md-6">
             <div class="main-screen__info">
             
-
                 <?php if ( ! empty( $title ) ): ?>
                     <h1>
                         <?php echo $title ?>
