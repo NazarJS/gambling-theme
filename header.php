@@ -55,7 +55,7 @@ if ( function_exists( 'get_field' ) ) {
 
 	<?php
 	wp_head();
-	//get_template_part( 'inc/default-styles' );
+	get_template_part( 'inc/default-styles' );
   
 	$head_metrics_code = get_field( 'head_code', 'options' );
 	if ( ! empty( $head_metrics_code ) ) {

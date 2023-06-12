@@ -43,7 +43,7 @@
          'hover_nav_bg_color' => $header_colors['hover_nav_bg_color'] ??'#1e73be',
       ];
        $footer_colors = [
-        'bg_color' => $footer_colors['bg_color'] ?? '#1b96f3',
+        'bg_color' => $footer_colors['bg_color'] ?? 'red',
         'text_color' => $footer_colors['text_color'] ??'#fff',
       ];
 
@@ -74,7 +74,7 @@
     ?>
     :root {
         /* footer */
-        --ft_background_color: <?= $footer_colors['bg_color']?>;
+        --bg-footer: <?= $footer_colors['bg_color']?>;
         --ft_text_color: <?= $footer_colors['text_color']?>;
         /* Links */
         --link_color: <?= $link_colors_arr['link_color']; ?>;
