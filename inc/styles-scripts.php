@@ -5,7 +5,7 @@ $js_ver = filemtime(get_template_directory() . '/assets/dist/js/main.js');
 function my_acf_admin_head()
 {
     global $css_ver; ?>
-    <link rel="stylesheet" href="<?= CSS_DIR . '/main.min.css?ver=' . $css_ver ?>">
+    <link rel="stylesheet" href="<?= CSS_DIR . '/style.css?ver=' . $css_ver ?>">
     <style type="text/css">
         .wp-block {
             max-width: 100%;
@@ -58,6 +58,8 @@ function my_acf_admin_head()
     <?php
 }
 
+
+//styles for Editor
 add_action('current_screen', 'styles_for_editor');
 function styles_for_editor()
 {
@@ -69,6 +71,10 @@ function styles_for_editor()
 }
 
 add_action('wp_enqueue_scripts', 'add_styles_scripts');
+
+
+
+//styles for Front end
 function add_styles_scripts()
 {
     global $css_ver, $js_ver;
