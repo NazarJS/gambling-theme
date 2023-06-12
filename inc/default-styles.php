@@ -134,8 +134,8 @@
 
 
 <?php
-if ( get_field( 'enable_google_fonts', 'options' ) ) {
-	?>
+if (get_field('enable_google_fonts', 'options')) {
+    ?>
     <style>
         <?php
         the_field('import_string', 'options');
@@ -150,7 +150,7 @@ if ( get_field( 'enable_google_fonts', 'options' ) ) {
         <?php the_field('font_family', 'options');?>
         }
     </style>
-	<?php
+    <?php
 }
 ?>
 
