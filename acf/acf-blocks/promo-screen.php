@@ -33,7 +33,9 @@ echo acf_block_before( 'main register', $is_preview );
 
                   <?php if ( ! empty( $bonus_info_second ) ): ?>
 					          <div class="main-register__bar main-register__bar--green">
-                      <div class="main-register__circle"></div>
+                      <div class="main-register__circle">
+                        <img src="<?php echo $path ?>/svg/Subtract.svg" alt="alt">
+                      </div>
                         <?php echo $bonus_info_second  ?>
                       </div>
                     
