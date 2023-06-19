@@ -1,9 +1,24 @@
 :root {
+  //main
   --color-txt-dark:#0E0E0E;  // color dark
 
   --color-txt-white:#ffffff; // color light
 
   --color-primary: #2D7CF2; // main color
+
+  --body-bg-color:#F5F5F5; //body color
+
+  //header
+  --color-menu:#0E0E0E; //color header menu
+
+  --bg-header: #ffffff; //bg header
+
+  //footer
+  --bg-footer:#0E0E0E; //bg footer
+
+  --bg-footer-bar:#ffffff; // ?
+
+  //btn
 
   --btn-color-register:#ffffff; //btn register
 
@@ -12,10 +27,6 @@
   --btn-color-download: #2D7CF2; //btn download
 
   --bg-color-download: #EDF2FA; //btn download
-
-  --color-menu:#0E0E0E; //color header menu
-
-  --bg-footer:#0E0E0E; //bg footer
 
   --btn-color-android: #ffffff; //txt color btn android
 
@@ -29,13 +40,9 @@
 
   --btn-svg-ios:#ffffff; //svg color ios
 
-  --body-bg-color:#F5F5F5; //body color
+  // ??
 
   --content-block-bg:#ffffff; //content bg
 
   --border-radius: 32px;
-
-  --bg-header: #ffffff; //bg header
-
-  --bg-footer-bar:#ffffff;
 }

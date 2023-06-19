@@ -16,10 +16,10 @@
     width: 200px;
     padding: 15px;
     margin-right: 30px;
-    background: var(--bg-body);
+    background: var(--color-primary);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
-    border: 1px solid var(--main-accent-color);
-    background: linear-gradient(45deg,var(--main-accent-color) 10%, #484848 90%);
+    border: 1px solid var(--color-primary);
+    
     border-radius: var(--border-radius);
     transition: 0.5s;
 

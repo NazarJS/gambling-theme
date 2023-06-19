@@ -28,6 +28,12 @@ $link_for_mobile      = get_field( 'link_for_mobile', 'options' );
 $link_for_mobile_text = get_field( 'link_for_mobile_text', 'options' ) ?? '';
 $link_for_mobile_link = get_field( 'link_for_mobile_link', 'options' ) ?? '';
 ?>
+<?php
+$body_metrics_code = get_field( 'body_code', 'options' );
+if ( ! empty( $body_metrics_code ) ) {
+	echo $body_metrics_code;
+}
+?>
 
 <footer class="footer" id="footer">
     <div class="container">

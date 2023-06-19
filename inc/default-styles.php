@@ -31,9 +31,8 @@
         'bg_body' => $main_colors['bg_body'] ?? '#ffffff',
         'bg' => $main_colors['bg_color'] ?? '#efefef',
         'accend_color' => $main_colors['accent__color'] ??'#1b96f3',
-        'additional_color' => $main_colors['additional_color'] ?? '#e3e3e3',
-        'card_color' => $main_colors['card_color'] ?? '#efefef',
-        'text_color' => $main_colors['text_color'] ?? '#000000'
+        'text_color_dark' => $main_colors['text_color_dark'] ?? '#000',
+        'text_color_light' => $main_colors['text_color_light'] ?? '#ffffff',
       ];
 
       $header_colors_arr = [
@@ -76,22 +75,23 @@
         /* footer */
         --bg-footer: <?= $footer_colors['bg_color']?>;
         --ft_text_color: <?= $footer_colors['text_color']?>;
+         /* Header */
+         --color-menu: <?= $header_colors_arr['text_color']?>;
+        --bg-header: <?= $header_colors_arr['bg_color']?>;
+
         /* Links */
         --link_color: <?= $link_colors_arr['link_color']; ?>;
         --link_hover: <?= $link_colors_arr['link_color_hover']; ?>;
         /* Main colors */
-        --main-bg-color: <?= $main_colors_arr['bg']?>;
-        --main-accent-color: <?= $main_colors_arr['accend_color']?>;
-        --bg-card-color: <?= $main_colors_arr['card_color']?>;
-        --text-body-color: <?= $main_colors_arr['text_color']?>;
-        --second-accent-color: <?= $main_colors_arr['additional_color']?>;
-        --bg-body: <?= $main_colors_arr['bg_body']?>;
+        --body-bg-color: <?= $main_colors_arr['bg']?>;
+        --color-primary: <?= $main_colors_arr['accend_color']?>;
+        --color-txt-dark: <?= $main_colors_arr['text_color_dark']?>;
+        --color-txt-white: <?= $main_colors_arr['text_color_light']?>;
+
+        
         /* Border */
         --border-radius: <?= $border_radius?>px;
-        /* Header */
-        --h_text_color: <?= $header_colors_arr['text_color']?>;
-        --h_background_color: <?= $header_colors_arr['bg_color']?>;
-        --h_sec_navigation_color: <?= $header_colors_arr['hover_nav_bg_color']?>;
+       
 
         /* Buttons */
         --b-font-size: <?= $b_font_size; ?>px;

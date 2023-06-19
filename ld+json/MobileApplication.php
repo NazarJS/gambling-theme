@@ -1,15 +1,18 @@
 <?php
-$post_id = get_queried_object_id();
-$post_query = get_queried_object();
+  $description      = str_replace('"', '`', get_field( 'description' ));
+  $title = get_field('title');
+  $rating          = get_field( 'rating' );
+  $image       = get_field( 'image' );
+  $name = get_field('author_name'); 
 ?>
 
 <script type="application/ld+json">
   {
     "@context" : "http://schema.org",
     "@type" : "MobileApplication",
-    "name": "<?= !empty(get_field('review_title', $post_query)) ? get_field('review_title', $post_query) : str_replace('"', '`', get_the_title($post_id)); ?>",
+    "name": "<?= $name; ?>",
     "applicationCategory" : "GameApplication",
-    "description" : "<?= !empty(get_field('excerpt', $post_id)) ? get_field('excerpt', $post_id) : get_the_excerpt($post_id);?>",
+    "description" : "<?= wp_strip_all_tags($description); ?>",
     "operatingSystem" : "Android, iOS",
     "image" : "",
     "sourceOrganization" : {
@@ -26,7 +29,7 @@ $post_query = get_queried_object();
     "aggregateRating": {
       "@type": "AggregateRating",
       "bestRating": 5,
-      "ratingValue": "<?= get_field('aiRating') ?>",
+      "ratingValue": "<?= $rating; ?>",
       "worstRating": 3,
       "ratingCount": "<?= rand(5,20);?>"
     }

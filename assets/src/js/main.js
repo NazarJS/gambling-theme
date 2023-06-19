@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
      burgerr();
      copyPromo();
+     btnLink();
 });
 
 
@@ -74,3 +75,20 @@ let burger = document.querySelector('.header-burger');
         }
     });
    }
+
+function btnLink() {
+    const siteButtons = document.querySelectorAll('.link-button');
+    if (siteButtons) {
+      siteButtons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+          const thisButton = e.currentTarget;
+          const linkDecoded = thisButton.dataset.decoded;
+          let linkURL = thisButton.dataset.decodedText;
+          if (linkDecoded === 'true') {
+            linkURL = atob(linkURL);
+          }
+          window.location.href = linkURL;
+        });
+      });
+    }
+  }

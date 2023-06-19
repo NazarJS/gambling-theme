@@ -1,9 +1,10 @@
 <?php
 $post_id = get_queried_object_id();
 $post_query = get_queried_object();
-$review_title = get_field('review_title', $post_query);
-$review_logo = get_field('review_logo', $post_query);
-$review_rating = get_field('review_rating', $post_query);
+
+$name = get_field('author_name');
+$description_info = get_field('description_info');
+$rating = get_field("rating");
 
 
 
@@ -13,12 +14,12 @@ $review_rating = get_field('review_rating', $post_query);
     "@type": "Review",
     "author": {
         "@type": "Person",
-        "name": "<?= get_the_author_meta('name', $post_query->post_author)?>"
+        "name": "<?= get_the_author_meta('name', $post_query->post_author)?>$name"
     },
     "itemReviewed": {
         "@type": "Game",
-        "image": "<?= !empty($review_logo) ? wp_get_attachment_url($review_logo) : ''; ?>",
-        "name": "<?= $review_title; ?>"
+        
+        "name": "<?= $name; ?>"
     },
     "publisher": {
         "@type": "Organization",
@@ -28,13 +29,14 @@ $review_rating = get_field('review_rating', $post_query);
           "url": "<?= wp_get_attachment_url(get_field('header_logo', 'options')); ?>"
         }
      },
+     "description" : "<?= wp_strip_all_tags($description_info); ?>",
     "datePublished": "<?= $post_query->post_date; ?>",
     "dateCreated": "<?= $post_query->post_date; ?>",
     "dateModified": "<?= $post_query->post_modified; ?>",
     "reviewRating": {
         "@type": "Rating",
         "bestRating": 5,
-        "ratingValue": "<?= $review_rating / 2; ?>",
+        "ratingValue": "<?= $rating; ?>",
         "worstRating": 1
     }
   }

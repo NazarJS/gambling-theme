@@ -9,6 +9,10 @@ $link_sign_up = get_field('link_sign_up');
 
 $bonus_info = get_field('bonus_info');
 $bonus_info_second = get_field('bonus_info_second');
+$rating = get_field("rating");
+
+
+get_template_part('ld+json/Review');
 
 echo acf_block_before( 'main register', $is_preview );
 ?>
