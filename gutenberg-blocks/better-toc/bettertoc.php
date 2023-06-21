@@ -1,4 +1,5 @@
 <?php
+add_action( 'init', 'better_toc_block_init' );
 function better_toc_block_init() {
 	register_block_type( __DIR__ . '/build', array( 'render_callback' => 'render_better_toc' ) );
 }
