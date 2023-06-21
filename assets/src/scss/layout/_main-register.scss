@@ -65,8 +65,7 @@
 
         &--green {
             .main-register__circle {
-                background-color: 
-                #22C764;
+                
 
                 &::after {
                     display: none;
@@ -187,13 +186,18 @@
             height: 60px;
             background-color: #ffffff;
             cursor: pointer;
-    
-            img {
+
+            .ui-icon {
                 position: absolute;
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
+                width: 24px;
+                height: 24px;
+                fill:var(--color-primary)
             }
+    
+           
         }
 
         &__wrap {

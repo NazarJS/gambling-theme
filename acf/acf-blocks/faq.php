@@ -15,18 +15,9 @@ if ( $enable_microdata ) {
           <?php foreach ( $faq as $point ): ?>
             <?php 
               if ( $enable_microdata ) {
-
-
-                echo "start";
                 $answerFilter = wp_strip_all_tags($point['answer']);
-                echo '</br>';
-                var_dump($answerFilter);
-                echo '</br>';
-                $answerFilter = str_replace('#8217',' ', $answerFilter);
-                echo '</br>';
                 
-            
-                var_dump($answerFilter);
+                $answerFilter = str_replace('#8217',' ', $answerFilter);
                 
               } ?>
             <details>
