@@ -10,15 +10,22 @@ if ( $enable_microdata ) {
 }
 ?>
     <div class="faq">
-     
+
       <?php if(!empty($faq)): ?>
           <?php foreach ( $faq as $point ): ?>
+            <?php 
+              if ( $enable_microdata ) {
+                $answerFilter = wp_strip_all_tags($point['answer']);
+                
+                $answerFilter = str_replace('#8217',' ', $answerFilter);
+                
+              } ?>
             <details>
               <summary>
                 <h3 class="title-underline"><?= $point['question'] ?></h3>
                 <div class="faq__arrow"></div>
               </summary>
-              <p><?= ($enable_microdata) ? $point['answer'] : $point['answer_edit'] ?></p>
+              <p><?php echo ($enable_microdata) ? $answerFilter  : $point['answer'] ?></p> 
             </details>
           <?php	endforeach;	?>
         <?php endif;?>

@@ -8,8 +8,14 @@
     $rating = get_field('rating');
     $people_counter = get_field('people_counter');
     $people_download = get_field('people_download');
+    $microdate = get_field('microdate');
 
     echo acf_block_before( 'Main Screen', $is_preview );
+
+    if($microdate) {
+      get_template_part('ld+json/MobileApplication');
+    }
+    
  ?>
     
 

@@ -55,7 +55,7 @@ if ( function_exists( 'get_field' ) ) {
 
 	<?php
 	wp_head();
-	//get_template_part( 'inc/default-styles' );
+	get_template_part( 'inc/default-styles' );
   
 	$head_metrics_code = get_field( 'head_code', 'options' );
 	if ( ! empty( $head_metrics_code ) ) {
@@ -65,12 +65,7 @@ if ( function_exists( 'get_field' ) ) {
 </head>
 
 <body <?php body_class(); ?>>
-<?php
-$body_metrics_code = get_field( 'body_code', 'options' );
-if ( ! empty( $body_metrics_code ) ) {
-	echo $body_metrics_code;
-}
-?>
+
 
 <?php wp_body_open(); ?>
 

@@ -22,25 +22,6 @@
             "ui_off_text": ""
         },
         {
-            "key": "field_60f162e48daeb",
-            "label": "Close all Item?",
-            "name": "close_faq",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui": 1,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
             "key": "field_6024fe25f7998",
             "label": "FAQ",
             "name": "faq",
@@ -79,48 +60,13 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_6024fe3cf799a",
+                    "key": "field_64878d4f231d1",
                     "label": "Answer",
                     "name": "answer",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_6024fe4e26a4d",
-                                "operator": "==",
-                                "value": "1"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": ""
-                },
-                {
-                    "key": "field_607467b847c1b",
-                    "label": "Answer",
-                    "name": "answer_edit",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_6024fe4e26a4d",
-                                "operator": "!=",
-                                "value": "1"
-                            }
-                        ]
-                    ],
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -152,5 +98,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1679578829
+    "modified": 1686605153
 }

@@ -10,6 +10,8 @@ $link_sign_up = get_field('link_sign_up');
 $bonus_info = get_field('bonus_info');
 $bonus_info_second = get_field('bonus_info_second');
 
+$Now = new DateTime('now', new DateTimeZone('Asia/Taipei'));
+
 echo acf_block_before( 'main register', $is_preview );
 ?>
     <div class="main-register">
@@ -26,14 +28,16 @@ echo acf_block_before( 'main register', $is_preview );
                       <div class="main-register__circle"></div>
                       <?php echo $bonus_info ?>
                       <span class="main-register__data">
-                        24.03.2022
+                      <?php echo  $Now->format('d.m.y') ?>
                       </span>
                     </div>
 				          <?php endif; ?>
 
                   <?php if ( ! empty( $bonus_info_second ) ): ?>
 					          <div class="main-register__bar main-register__bar--green">
-                      <div class="main-register__circle"></div>
+                      <div class="main-register__circle">
+                        <img src="<?php echo $path ?>/svg/Subtract.svg" alt="alt">
+                      </div>
                         <?php echo $bonus_info_second  ?>
                       </div>
                     
@@ -52,7 +56,9 @@ echo acf_block_before( 'main register', $is_preview );
                         
                         <div class="promocode__wrap">
                             <div class="promocode__btn">
-                                <img src="<?php echo $path ?>/Group.png" alt="alt">
+                            <svg class='ui-icon'>
+                              <use xlink:href='<?php echo $path ?>/svg/symbols.svg#copy'></use>
+                            </svg>
                             </div>
 
                             <div class="promocode__txt">

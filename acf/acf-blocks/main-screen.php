@@ -9,6 +9,22 @@ $link_sign_up = get_field('link_sign_up');
 
 $bonus_info = get_field('bonus_info');
 $bonus_info_second = get_field('bonus_info_second');
+$rating = get_field("rating");
+$microdate = get_field('microdate');
+
+
+
+$Now = new DateTime('now', new DateTimeZone('Asia/Taipei'));
+
+
+
+
+
+
+
+if($microdate) {
+  get_template_part('ld+json/Review');
+}
 
 echo acf_block_before( 'main register', $is_preview );
 ?>
@@ -26,14 +42,16 @@ echo acf_block_before( 'main register', $is_preview );
                       <div class="main-register__circle"></div>
                       <?php echo $bonus_info ?>
                       <span class="main-register__data">
-                        24.03.2022
+                        <?php echo  $Now->format('d.m.y') ?>
                       </span>
                     </div>
 				          <?php endif; ?>
 
                   <?php if ( ! empty( $bonus_info_second ) ): ?>
 					          <div class="main-register__bar main-register__bar--green">
-                      <div class="main-register__circle"></div>
+                      <div class="main-register__circle">
+                        <img src="<?php echo $path ?>/svg/Subtract.svg" alt="alt">
+                      </div>
                         <?php echo $bonus_info_second  ?>
                       </div>
                     
