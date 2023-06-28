@@ -1,5 +1,5 @@
 <?php
-
+$path = IMG_DIR;
 $title = get_field( 'title' );
 $subtitle = get_field( 'subtitle' );
 $description_info = get_field('description_info');
@@ -26,7 +26,7 @@ if($microdate) {
   get_template_part('ld+json/Review');
 }
 
-echo acf_block_before( 'main register', $is_preview );
+echo acf_block_before( 'main screen', $is_preview );
 ?>
     <div class="main-register">
       <div class="container">
@@ -35,27 +35,29 @@ echo acf_block_before( 'main register', $is_preview );
           <div class="col-md-6">
             <div class="main-register__wrap">
               <div class="main-register__body">
-                  <div class="main-register__container">
-                    
-                  <?php if ( ! empty( $bonus_info ) ): ?>
-					          <div class="main-register__bar">
-                      <div class="main-register__circle"></div>
-                      <?php echo $bonus_info ?>
-                      <span class="main-register__data">
-                        <?php echo  $Now->format('d.m.y') ?>
-                      </span>
-                    </div>
-				          <?php endif; ?>
 
-                  <?php if ( ! empty( $bonus_info_second ) ): ?>
-					          <div class="main-register__bar main-register__bar--green">
-                      <div class="main-register__circle">
-                        <img src="<?php echo $path ?>/svg/Subtract.svg" alt="alt">
-                      </div>
-                        <?php echo $bonus_info_second  ?>
-                      </div>
-                    
-				          <?php endif; ?>    
+
+                  <div class="main-register__container">
+                        
+                      <?php if ( ! empty( $bonus_info ) ): ?>
+                        <div class="main-register__bar">
+                          <div class="main-register__circle"></div>
+                          <?php echo $bonus_info ?>
+                          <span class="main-register__data">
+                            <?php echo  $Now->format('d.m.y') ?>
+                          </span>
+                        </div>
+                      <?php endif; ?>
+
+                      <?php if ( ! empty( $bonus_info_second ) ): ?>
+                        <div class="main-register__bar main-register__bar--green">
+                          <div class="main-register__circle">
+                            <img src="<?php echo $path ?>/svg/Subtract.svg" alt="alt">
+                          </div>
+                            <?php echo $bonus_info_second  ?>
+                          </div>
+                        
+                      <?php endif; ?>    
                   </div>           
 
                   <div class="main-register__subtitle">

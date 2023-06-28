@@ -127,7 +127,7 @@
 
         .menu-item-has-children {
             &:after {
-                top:0;
+                // top:0;
                 right: 50px;
                 font-size: 40px;
             }
@@ -174,7 +174,7 @@
             position: static;
             border: none;
             padding-bottom: 6px;
-            ba
+            
 
             li {
                 border: none;
@@ -220,6 +220,17 @@
 }
 
     .menu {
+        .open {
+            .sub-menu {
+                display: block;
+            }
+
+            &::after {
+                right: 40px !important;
+                transform: rotate(180deg);
+            }
+        }
+
         li {
             position: relative;
             display: inline-block;
@@ -238,12 +249,14 @@
 
             &:hover {
 
-                .sub-menu {
-                    display: block;
-                }
-
-                .list-links {
-                    display: block;
+                @media(min-width:1023px) {
+                    .sub-menu {
+                        display: block;
+                    }
+    
+                    .list-links {
+                        display: block;
+                    }
                 }
             }
         }
@@ -270,10 +283,7 @@
         padding: 26px 16px;
         display: none;
         top: 140%;
-        right: -150%;
-        // background-color: #ffffff;
         overflow: hidden;
-        // border: 1px solid #EDF2FA;
         border-radius: 12px;
         transition: 0.3s;
         background-color: var(--bg-header);
@@ -318,6 +328,14 @@
         padding: 20px 40px;
         left: 0;
     }    
+
+    &:hover {
+        &::after {
+            top: 13px;
+            right: -15px;
+            transform: rotate(180deg);
+        }
+    }
 }
 
 .no_scroll {

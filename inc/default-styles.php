@@ -27,12 +27,15 @@ $second_header_button_arr = [
 ];
 
 $main_colors_arr = [
-    'bg_body' => $main_colors['bg_body'] ?? '#ffffff',
+    // 'bg_body' => $main_colors['bg_body'] ?? '#ffffff',
     'bg' => $main_colors['bg_color'] ?? '#efefef',
     'accend_color' => $main_colors['accent__color'] ?? '#1b96f3',
-    'additional_color' => $main_colors['additional_color'] ?? '#e3e3e3',
-    'card_color' => $main_colors['card_color'] ?? '#efefef',
-    'text_color' => $main_colors['text_color'] ?? '#000000'
+    'text_color_dark' =>$main_colors['text_color_dark'] ?? '#000',
+    'text_color_light' => $main_colors['text_color_light'] ?? '#ffffff',
+
+    // 'additional_color' => $main_colors['additional_color'] ?? '#e3e3e3',
+    // 'card_color' => $main_colors['card_color'] ?? '#efefef',
+    // 'text_color' => $main_colors['text_color'] ?? '#000000'
 ];
 
 $header_colors_arr = [

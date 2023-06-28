@@ -133,7 +133,7 @@
         },
         {
             "key": "field_646f2a9b8a85c",
-            "label": "ancor link",
+            "label": "anchor link",
             "name": "link_sign_up",
             "type": "link",
             "instructions": "",
@@ -223,5 +223,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1687173835
+    "modified": 1687433066
 }

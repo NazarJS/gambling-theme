@@ -91,23 +91,20 @@ function Edit(_ref) {
       alignItems: "center"
     }
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorIndicator, {
-    colorValue: "#fff",
-    onClick: () => setStyleBtnColor('')
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorIndicator, {
     colorValue: "#444",
-    onClick: () => setStyleBtnColor('btn1')
+    onClick: () => setStyleBtnColor('ui-btn__register ui-btn')
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorIndicator, {
     colorValue: "#3775dd",
-    onClick: () => setStyleBtnColor('btn2')
+    onClick: () => setStyleBtnColor('ui-btn__download ui-btn')
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorIndicator, {
     colorValue: "#4c8700",
-    onClick: () => setStyleBtnColor('btn3')
+    onClick: () => setStyleBtnColor('ui-btn__icon ui-btn__android')
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorIndicator, {
     colorValue: "#9A68C7",
-    onClick: () => setStyleBtnColor('btn4')
+    onClick: () => setStyleBtnColor('ui-btn__icon ui-btn__ios')
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorIndicator, {
     colorValue: "#fdf900",
-    onClick: () => setStyleBtnColor('btn5')
+    onClick: () => setStyleBtnColor('ui-btn__sign')
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "special-section-wrapper"
   }, !previewStatus && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {

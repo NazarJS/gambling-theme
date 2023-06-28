@@ -6,7 +6,7 @@ $android_button = get_field('button_android');
 $ios_button = get_field('button_ios');
 $image = get_field('image');
 
-echo acf_block_before( 'MainScreen', $is_preview );
+echo acf_block_before( 'Basic screen', $is_preview );
 
  ?>
     

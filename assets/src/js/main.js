@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
      burgerr();
      copyPromo();
      btnLink();
+     mobileToggle();
 });
 
 
@@ -13,6 +14,18 @@ let burger = document.querySelector('.header-burger');
         vieportWidth > 1024 ? document.querySelector('.header__body').classList.remove('mobile-menu') : false;
         console.log(vieportWidth);
     });
+
+    function mobileToggle() {
+      let mobileList = document.querySelectorAll('.menu-item-has-children');
+
+      console.log(mobileList)
+
+      mobileList.forEach(e => {
+       e.onclick = function() {
+        this.classList.toggle('open');
+       }
+      })
+    }
 
 
 

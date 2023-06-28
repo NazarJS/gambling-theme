@@ -118,7 +118,7 @@
         },
         {
             "key": "field_6475f00997971",
-            "label": "ancor link",
+            "label": "anchor link",
             "name": "link_sign_up",
             "type": "link",
             "instructions": "how to start",
@@ -149,5 +149,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1686214593
+    "modified": 1687433200
 }

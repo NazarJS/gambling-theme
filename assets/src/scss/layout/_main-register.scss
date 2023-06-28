@@ -53,6 +53,7 @@
         padding: 4px 8px;
         border-radius: 100px;
         background-color: #ffffff;
+        color: var(--color-txt-dark);
 
         @media(max-width:1200px) {
             font-size: 13px;
@@ -115,12 +116,20 @@
         justify-content: center;
         height: 100%;
 
+        h1 {
+            color:  var(--color-txt-dark);
+        }
+
         @media(max-width:1024px) {
             margin-top: 16px;
         }
     }
 
     &__txt {
+
+        h1 {
+            color:  var(--color-txt-dark);
+        }
 
     }
 

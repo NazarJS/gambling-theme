@@ -61,28 +61,24 @@ export default function Edit({attributes, setAttributes}) {
 
 				<ToolbarGroup style={{display: "flex", alignItems: "center"}}>
 					<ColorIndicator
-						colorValue="#fff"
-						onClick={()=>setStyleBtnColor('')}
-					/>
-					<ColorIndicator
 						colorValue="#444"
-						onClick={()=>setStyleBtnColor('btn1')}
+						onClick={()=>setStyleBtnColor('ui-btn__register ui-btn')}
 					/>
 					<ColorIndicator
 						colorValue="#3775dd"
-						onClick={()=>setStyleBtnColor('btn2')}
+						onClick={()=>setStyleBtnColor('ui-btn__download ui-btn')}
 					/>
 					<ColorIndicator
 						colorValue="#4c8700"
-						onClick={()=>setStyleBtnColor('btn3')}
+						onClick={()=>setStyleBtnColor('ui-btn__icon ui-btn__android')}
 					/>
 					<ColorIndicator
 						colorValue="#9A68C7"
-						onClick={()=>setStyleBtnColor('btn4')}
+						onClick={()=>setStyleBtnColor('ui-btn__icon ui-btn__ios')}
 					/>
 					<ColorIndicator
 						colorValue="#fdf900"
-						onClick={()=>setStyleBtnColor('btn5')}
+						onClick={()=>setStyleBtnColor('ui-btn__sign')}
 					/>
 
 				</ToolbarGroup>

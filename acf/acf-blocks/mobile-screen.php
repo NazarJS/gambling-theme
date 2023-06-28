@@ -10,7 +10,7 @@
     $people_download = get_field('people_download');
     $microdate = get_field('microdate');
 
-    echo acf_block_before( 'Main Screen', $is_preview );
+    echo acf_block_before( 'Mobile screen', $is_preview );
 
     if($microdate) {
       get_template_part('ld+json/MobileApplication');

@@ -8,13 +8,15 @@ $rating = get_field("rating");
 
 
 
+
+
 ?>
 <script type="application/ld+json">
   { "@context": "https://schema.org",
     "@type": "Review",
     "author": {
         "@type": "Person",
-        "name": "<?= get_the_author_meta('name', $post_query->post_author)?>$name"
+        "name": "<?= get_the_author_meta('name', $post_query->post_author)?>"
     },
     "itemReviewed": {
         "@type": "Game",

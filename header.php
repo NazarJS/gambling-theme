@@ -46,12 +46,10 @@ if ( function_exists( 'get_field' ) ) {
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="preload"
-          href="<?= $theme_path ?>/assets/build/fonts/roboto-regular.woff2"
-          as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload"
-          href="<?= $theme_path ?>/assets/build/fonts/roboto-bold.woff2"
-          as="font" type="font/woff2" crossorigin="anonymous">
+  
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
 
 	<?php
 	wp_head();
@@ -90,9 +88,9 @@ if ( function_exists( 'get_field' ) ) {
 							<?php else: ?>
 								<p><?= CUSTOM_SITE_NAME; ?></p>
 							<?php endif; ?>
-							</a>
+							
 				<?php endif; ?>
-
+		</a>
         <div class="header__container">
           <div class="menu__wrapper">
 

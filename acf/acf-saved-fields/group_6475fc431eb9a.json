@@ -117,7 +117,7 @@
         },
         {
             "key": "field_64770327ba4d4",
-            "label": "ancor link",
+            "label": "anchor link",
             "name": "button_install",
             "type": "link",
             "instructions": "#how to start",
@@ -228,5 +228,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1687171308
+    "modified": 1687433048
 }

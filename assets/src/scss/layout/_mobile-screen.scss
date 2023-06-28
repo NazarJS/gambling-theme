@@ -65,8 +65,8 @@
 
    &__container {
       margin-bottom: 24px;
+        text-align:center;
 
-      
    }
 
    &__bottom {
@@ -78,6 +78,7 @@
    &__image {
     display: inline-block;
     margin-right: 32px;
+    margin-bottom: 16px;
 
     @media(max-width:1024px) {
         margin-right: 18px;
