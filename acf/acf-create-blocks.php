@@ -19,7 +19,7 @@ add_action( 'acf/init', function () {
 		] );
 		acf_register_block_type( [
 			'name'            => 'button',
-			'title'           => 'Button',
+			'title'           => 'Old button',
 			'description'     => 'Button',
 			'category'        =>  'theme-category',
 			'render_template' => get_template_directory() . '/acf/acf-blocks/button.php',

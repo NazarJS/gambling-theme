@@ -1,12 +1,12 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
-  "name": "game-owner-blocks/bettertoc",
+  "name": "gambling-theme/bettertoc",
   "version": "0.1.0",
   "title": "Bettertoc",
-  "category": "game-owner-cat",
+  "category": "theme-category",
   "icon": "clipboard",
-  "description": "Example block scaffolded with Create Block tool.",
+  "description": "This block add list of titles",
   "supports": {
 	"html": false
   },
