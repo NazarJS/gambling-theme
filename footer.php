@@ -27,6 +27,7 @@ $social_links         = get_field( 'social_links', 'options' );
 $link_for_mobile      = get_field( 'link_for_mobile', 'options' );
 $link_for_mobile_text = get_field( 'link_for_mobile_text', 'options' ) ?? '';
 $link_for_mobile_link = get_field( 'link_for_mobile_link', 'options' ) ?? '';
+$copyright = get_field('footer_bottom_copyright' , 'options');
 ?>
 <?php
 $body_metrics_code = get_field( 'body_code', 'options' );
@@ -81,29 +82,7 @@ if ( ! empty( $body_metrics_code ) ) {
         </div>
 
         <div class="footer-banners">
-          <!-- <div class="footer-banners__item">
-            <img src="./images/image 12.png" alt="alt" loading="lazy">
-          </div>
-
-          <div class="footer-banners__item">
-            <img src="./images/image 12.png" alt="alt" loading="lazy">
-          </div>
-
-          <div class="footer-banners__item">
-            <img src="./images/image 12.png" alt="alt" loading="lazy">
-          </div>
-
-          <div class="footer-banners__item">
-            <img src="./images/image 12.png" alt="alt" loading="lazy">
-          </div>
-
-          <div class="footer-banners__item">
-            <img src="./images/image 12.png" alt="alt" loading="lazy">
-          </div>
-
-          <div class="footer-banners__item">
-            <img src="./images/image 12.png" alt="alt" loading="lazy">
-          </div> -->
+        
 
           <?php get_template_part( 'template-parts/footer', 'payments' ); ?>
 
@@ -122,7 +101,7 @@ if ( ! empty( $body_metrics_code ) ) {
           </div>
 
           <div class="footer-bottom__info">
-            © 2010-2023. All rights reserved. 
+            © <?php echo  date('Y') ?>. <?php echo $copyright ?>  
           </div>
         </div>
     </div>

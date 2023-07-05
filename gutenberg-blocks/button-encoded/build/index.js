@@ -37,6 +37,7 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 
+
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
  * Those files can contain any CSS code that gets applied to the editor.
@@ -63,6 +64,37 @@ function Edit(_ref) {
   const [url, setUrl] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(attributes.url);
   const [previewStatus, setPreview] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(attributes.preview);
   const [btnStyle, setStyleBtnColor] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(attributes.btnStyle);
+  function showButton(props, anchor) {
+    if (props == 'android') {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+        type: "button",
+        class: "ui-btn__icon ui-btn__android"
+      }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+        class: "ui-btn__name"
+      }, "Download", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+        class: "ui-btn__subtitle"
+      }, "for Android")));
+    } else if (props == 'ios') {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+        type: "button",
+        class: "ui-btn__icon ui-btn__ios"
+      }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+        class: "ui-btn__name"
+      }, "Download", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+        class: "ui-btn__subtitle"
+      }, "for ios")));
+    } else if (props == 'register') {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+        type: "button",
+        class: "ui-btn ui-btn__register"
+      }, anchor);
+    } else if (props == 'download') {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+        type: "button",
+        class: "ui-btn ui-btn__download"
+      }, anchor);
+    }
+  }
   const ChangeView = () => {
     setPreview(prevPreviewStatus => !prevPreviewStatus);
     setAttributes({
@@ -85,27 +117,28 @@ function Edit(_ref) {
     }
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
     onClick: ChangeView
-  }, "ChangeView")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToolbarGroup, {
-    style: {
-      display: "flex",
-      alignItems: "center"
-    }
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorIndicator, {
-    colorValue: "#444",
-    onClick: () => setStyleBtnColor('ui-btn__register ui-btn')
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorIndicator, {
-    colorValue: "#3775dd",
-    onClick: () => setStyleBtnColor('ui-btn__download ui-btn')
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorIndicator, {
-    colorValue: "#4c8700",
-    onClick: () => setStyleBtnColor('ui-btn__icon ui-btn__android')
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorIndicator, {
-    colorValue: "#9A68C7",
-    onClick: () => setStyleBtnColor('ui-btn__icon ui-btn__ios')
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorIndicator, {
-    colorValue: "#fdf900",
-    onClick: () => setStyleBtnColor('ui-btn__sign')
-  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, "ChangeView")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.DropdownMenu
+  // icon={  }
+  , {
+    label: "Select a direction",
+    controls: [{
+      title: 'register',
+      // icon: arrowUp,
+      onClick: () => setStyleBtnColor('register')
+    }, {
+      title: 'download',
+      // icon: arrowLeft,
+      onClick: () => setStyleBtnColor('download')
+    }, {
+      title: 'android',
+      // icon: arrowRight,
+      onClick: () => setStyleBtnColor('android')
+    }, {
+      title: 'ios',
+      // icon: arrowDown,
+      onClick: () => setStyleBtnColor('ios')
+    }]
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "special-section-wrapper"
   }, !previewStatus && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "special-section-wrapper__heading"
@@ -119,10 +152,7 @@ function Edit(_ref) {
     placeholder: 'anchor',
     value: anchor,
     onChange: value => setAnchor(value)
-  }))), previewStatus && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: btnStyle,
-    href: url
-  }, anchor)));
+  }))), previewStatus && showButton(btnStyle, anchor)));
 }
 
 /***/ }),

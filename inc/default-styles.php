@@ -27,15 +27,10 @@ $second_header_button_arr = [
 ];
 
 $main_colors_arr = [
-    // 'bg_body' => $main_colors['bg_body'] ?? '#ffffff',
     'bg' => $main_colors['bg_color'] ?? '#efefef',
     'accend_color' => $main_colors['accent__color'] ?? '#1b96f3',
     'text_color_dark' =>$main_colors['text_color_dark'] ?? '#000',
     'text_color_light' => $main_colors['text_color_light'] ?? '#ffffff',
-
-    // 'additional_color' => $main_colors['additional_color'] ?? '#e3e3e3',
-    // 'card_color' => $main_colors['card_color'] ?? '#efefef',
-    // 'text_color' => $main_colors['text_color'] ?? '#000000'
 ];
 
 $header_colors_arr = [
@@ -55,7 +50,10 @@ $link_colors_arr = [
 ];
 
 
-$buttons_bite = get_field('buttons_bite', 'options');
+$button_android = get_field('button_android', 'options');
+$button_ios = get_field('button_ios', 'options');
+$button_register = get_field('button_register', 'options');
+$button_download = get_field('button_download', 'options');
 
 $b_font_size = get_field('b_font_size', 'options') ?? '15';
 
@@ -103,10 +101,24 @@ $review_text_progress_bar = get_field('review_text_progress_bar', 'options') ?? 
         --btn-border-hover-color: <?= !empty($buttons_border['hover_border_color']) ? $buttons_border['hover_border_color'] : '#33B63C'?>;
         --btn-border-hover-text-color: <?= !empty($buttons_border['hover_text_border_color']) ? $buttons_border['hover_text_border_color'] : '#ffffff'?>;
 
-        --bite_btn_text: <?= !empty($buttons_bite['text_color']) ? $buttons_bite['text_color'] : 'black'?>;
-        --bite_btn_text_hvr: <?= !empty($buttons_bite['hover_text_color']) ? $buttons_bite['hover_text_color'] : 'white'?>;
-        --bite_btn_bg: <?= !empty($buttons_bite['background_color']) ? $buttons_bite['background_color'] : '#ffff00'?>;
-        --bite_btn_bg_sec: <?= !empty($buttons_bite['background_color_second']) ? $buttons_bite['background_color_second'] : '#ffae00'?>;
+        /* button android */
+        --btn-color-android: <?= !empty($button_android['text_color']) ? $button_android['text_color'] : '#ffffff'?>;
+        --btn-bg-android:<?= !empty($button_android['bg_color']) ? $button_android['bg_color'] : '#000000'?>;
+        --btn-svg-android:<?= !empty($button_android['svg_color']) ? $button_android['svg_color'] : '#7CB342'?>;
+
+        /* button ios */
+        --btn-color-ios: <?= !empty($button_ios['text_color']) ? $button_ios['text_color'] : '#ffffff'?>;
+        --btn-bg-ios:<?= !empty($button_ios['bg_color']) ? $button_ios['bg_color'] : '#2D7CF2'?>;
+        --btn-svg-ios:<?= !empty($button_ios['svg_color']) ? $button_ios['svg_color'] : '#ffffff'?>;
+
+        /* button register */
+        --btn-color-register: <?= !empty($button_register['text_color']) ? $button_register['text_color'] : '#EDF2FA'?>;
+        --bg-color-register:<?= !empty($button_register['bg_color']) ? $button_register['bg_color'] : '#2D7CF2'?>;
+
+        /* button download  */
+        --btn-color-download: <?= !empty($button_download['text_color']) ? $button_download['text_color'] : '#2D7CF2'?>;
+        --bg-color-download:<?= !empty($button_download['bg_color']) ? $button_download['bg_color'] : '#EDF2FA'?>;
+   
 
 
         --btn_header_first_color_bg: <?=$first_header_button_arr['color_bg']?>;

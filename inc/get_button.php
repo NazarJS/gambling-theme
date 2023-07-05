@@ -146,6 +146,3 @@ function get_button(  $url,  $title, string $class = '', string $rel = 'nofollow
 	return $btn;
 }
 
-// <svg class='ui-icon'>
-// 						  <use xlink:href='$image_path/footer-logo.png'></use>
-// 						</svg>

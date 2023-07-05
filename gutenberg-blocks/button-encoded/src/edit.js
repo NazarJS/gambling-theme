@@ -12,13 +12,16 @@ import {__} from '@wordpress/i18n';
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
 import {useBlockProps, BlockControls} from '@wordpress/block-editor';
+import { DropdownMenu } from '@wordpress/components';
 
 import {
 	TextControl,
 	ToolbarGroup,
 	Button,
 	ColorPalette,
-	ColorIndicator
+	ColorIndicator,
+	
+
 } from '@wordpress/components';
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -42,7 +45,45 @@ export default function Edit({attributes, setAttributes}) {
 	const [anchor, setAnchor] = useState(attributes.anchor);
 	const [url, setUrl] = useState(attributes.url);
 	const [previewStatus, setPreview] = useState(attributes.preview);
-	const [btnStyle, setStyleBtnColor] = useState(attributes.btnStyle)
+	const [btnStyle, setStyleBtnColor] = useState(attributes.btnStyle);
+
+	function showButton(props,anchor) {
+		if(props == 'android') {
+			return (<button type="button" class="ui-btn__icon ui-btn__android">
+			
+			<span class="ui-btn__name">
+				Download
+
+				<span class="ui-btn__subtitle">
+					for Android
+				</span>
+			</span>
+					</button>)
+		} else if (props == 'ios') {
+			return (<button type="button" class="ui-btn__icon ui-btn__ios">
+			
+						<span class="ui-btn__name">
+							Download
+
+							<span class="ui-btn__subtitle">
+								for ios
+							</span>
+						</span>
+					</button>)
+		} else if (props == 'register') {		
+			return(
+				<button type="button" class="ui-btn ui-btn__register">
+					{anchor}
+				</button>	
+			)
+		} else if (props == 'download') {
+			return(
+				<button type="button" class="ui-btn ui-btn__download">
+					{anchor}
+				</button>	
+			)
+		}
+	} 
 
 
 	const ChangeView = () => {
@@ -59,29 +100,30 @@ export default function Edit({attributes, setAttributes}) {
 					<Button onClick={ChangeView}>ChangeView</Button>
 				</ToolbarGroup>
 
-				<ToolbarGroup style={{display: "flex", alignItems: "center"}}>
-					<ColorIndicator
-						colorValue="#444"
-						onClick={()=>setStyleBtnColor('ui-btn__register ui-btn')}
+			
+				<DropdownMenu
+						label="Select a direction"
+						controls={ [
+							{
+								title: 'register',
+								onClick: ()=>setStyleBtnColor('register'),
+								
+							},
+							{
+								title: 'download',
+								onClick: ()=>setStyleBtnColor('download'),
+							},
+							{
+								title: 'android',
+								onClick: ()=>setStyleBtnColor('android'),
+							},
+							{
+								title: 'ios',
+								onClick: ()=>setStyleBtnColor('ios'),
+							},
+							
+						] }
 					/>
-					<ColorIndicator
-						colorValue="#3775dd"
-						onClick={()=>setStyleBtnColor('ui-btn__download ui-btn')}
-					/>
-					<ColorIndicator
-						colorValue="#4c8700"
-						onClick={()=>setStyleBtnColor('ui-btn__icon ui-btn__android')}
-					/>
-					<ColorIndicator
-						colorValue="#9A68C7"
-						onClick={()=>setStyleBtnColor('ui-btn__icon ui-btn__ios')}
-					/>
-					<ColorIndicator
-						colorValue="#fdf900"
-						onClick={()=>setStyleBtnColor('ui-btn__sign')}
-					/>
-
-				</ToolbarGroup>
 			</BlockControls>
 			<div className="special-section-wrapper">
 
@@ -106,9 +148,7 @@ export default function Edit({attributes, setAttributes}) {
 					</>
 				)}
 				{previewStatus && (
-					<button className={btnStyle} href={url}>
-						{anchor}
-					</button>
+					showButton(btnStyle,anchor)
 				)}
 
 			</div>

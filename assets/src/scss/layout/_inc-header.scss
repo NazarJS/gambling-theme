@@ -127,9 +127,7 @@
 
         .menu-item-has-children {
             &:after {
-                // top:0;
-                right: 50px;
-                font-size: 40px;
+                right: 40px;
             }
         }
 
@@ -225,10 +223,10 @@
                 display: block;
             }
 
-            &::after {
-                right: 40px !important;
-                transform: rotate(180deg);
-            }
+           &::after {
+              top: 15px;
+              transform: rotate(180deg);
+           }
         }
 
         li {
@@ -312,13 +310,16 @@
 
     &::after {
         position:absolute;
-        content: "\1F893";
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1.5L6 6.5L1 1.5' stroke='%230E0E0E' stroke-width='2'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: contain;
         display: inline-block;
         width: 10px;
         height: 10px;
-        top: 10%;
-        font-size: 26px;
-        color: var(--color-menu);
+        top: 35%;
+        // transform: translate(0, -50%);
+      
     }
 
     &::before {
@@ -329,11 +330,11 @@
         left: 0;
     }    
 
-    &:hover {
-        &::after {
-            top: 13px;
-            right: -15px;
-            transform: rotate(180deg);
+    @media(min-width:1023px) {
+        &:hover {
+            &::after {
+                transform: rotate(180deg);
+            }
         }
     }
 }

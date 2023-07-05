@@ -14,15 +14,29 @@ function render_button_encode( $attributes, $content, $block ) {
 	$style = $attributes['btnStyle'];
 	ob_start();
 
-	if ($attributes['btnStyle'] == 'ui-btn__icon ui-btn__android') {
+	if ($attributes['btnStyle'] == 'android') {
 
-		echo get_button( $url, ' ', 'ui-btn__icon ui-btn__android','', true );
-
-	} else if ($attributes['btnStyle'] == 'ui-btn__icon ui-btn__ios') {
 		printf("<button type='button'
 				
 				data-decoded-text='$url'
-				class='link-button $style'>
+				class='link-button ui-btn__icon ui-btn__android'>
+				<svg class='ui-icon'>
+					<use xlink:href='$image_path/svg/symbols.svg#ios'></use>
+				</svg>
+				<span class='ui-btn__name'>
+					Download
+
+					<span class='ui-btn__subtitle'>
+						for Android
+					</span>
+				</span>
+			</button>");
+
+	} else if ($attributes['btnStyle'] == 'ios') {
+		printf("<button type='button'
+				
+				data-decoded-text='$url'
+				class='link-button ui-btn__icon ui-btn__ios'>
 				<svg class='ui-icon'>
 					<use xlink:href='$image_path/svg/symbols.svg#ios'></use>
 				</svg>
@@ -35,10 +49,18 @@ function render_button_encode( $attributes, $content, $block ) {
 				</span>
 			</button>");
 
-	} else {
-		printf("<button class='special-button %s' data-link='%s'>%s</button>",$attributes['btnStyle'],base64_encode( $attributes['url'] ),$attributes['anchor']);
-	  }
+	} else if ($attributes['btnStyle'] == 'register') {
+		printf("<button class='special-button %s ui-btn__register ui-btn' data-link='%s'>%s</button>",$attributes['btnStyle'],base64_encode( $attributes['url'] ),$attributes['anchor']);
+
+	} else if ($attributes['btnStyle'] == 'download') {
+		printf("<button class='special-button %s ui-btn__download ui-btn' data-link='%s'>%s</button>",$attributes['btnStyle'],base64_encode( $attributes['url'] ),$attributes['anchor']);
+	}
+		
+	  
 	
 	
 	return ob_get_clean();
 }
+
+
+// printf("<button class='special-button %s' data-link='%s'>%s</button>",$attributes['btnStyle'],base64_encode( $attributes['url'] ),$attributes['anchor']);
