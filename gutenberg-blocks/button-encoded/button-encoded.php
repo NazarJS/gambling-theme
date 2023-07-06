@@ -1,8 +1,5 @@
 <?php
 
-$url = $attributes['url'];
-$style = $attributes['btnStyle'];
-
 function create_block_button_encoded_block_init() {
 	register_block_type( __DIR__ . '/build',array( 'render_callback' => 'render_button_encode' ));
 }

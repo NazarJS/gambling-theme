@@ -456,7 +456,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "25",
+                        "width": "33",
                         "class": "",
                         "id": ""
                     },
@@ -471,11 +471,11 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "33",
                         "class": "",
                         "id": ""
                     },
-                    "default_value": ""
+                    "default_value": "#0e0e0e"
                 },
                 {
                     "key": "field_64a547ae18892",
@@ -486,11 +486,11 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "33",
                         "class": "",
                         "id": ""
                     },
-                    "default_value": ""
+                    "default_value": "#7CB342"
                 }
             ]
         },
@@ -522,7 +522,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": ""
+                    "default_value": "#ffffff"
                 },
                 {
                     "key": "field_64a5497fc6e93",
@@ -537,7 +537,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": ""
+                    "default_value": "#2d7cf2"
                 },
                 {
                     "key": "field_64a54995c6e94",
@@ -599,7 +599,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": ""
+                    "default_value": "#2d7cf2"
                 }
             ]
         },
@@ -631,7 +631,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": ""
+                    "default_value": "#2d7cf2"
                 },
                 {
                     "key": "field_64a54e5bbea7b",
@@ -646,7 +646,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": ""
+                    "default_value": "#edf2fa"
                 }
             ]
         },
@@ -812,5 +812,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1688555371
+    "modified": 1688641934
 }
