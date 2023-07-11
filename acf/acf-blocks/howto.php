@@ -22,14 +22,14 @@ if ( $enable_microdata ):?>
             <div class="manual__body">
                 <div class="row">
                 <?php 
-                $count = 1;
+                
                 if ( ! empty( $steps ) ):
                     foreach ( $steps as $step ):?>
                     
                         <div class="col-md-6">
                             <div class="manual__item">
                         
-                                <h3 class="title-underline"><?= $step['title']. $count++ ?></h3>
+                                <h3 class="title-underline"><?= $step['title'] ?></h3>
 
 
                                 <?php if ( ! empty( $step['text'] ) ) : ?>
