@@ -18,13 +18,16 @@ get_header();
                 <div class="not-found-page">
                     <div class="not-found-page__wrap">
 
-                    <div class="not-found-page__col">
-                        <i class="denied-icon"></i>
-                    </div>
-                    <div class="not-found-page__col">
-                        <h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'latte-theme' ); ?></h1>
-                        <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'latte-theme' ); ?></p>
-                    </div>
+                            <div class="error_number">
+                                404
+                            </div>
+
+                            <div class="error_txt">Sorry we couldn't find that page</div>
+
+                            <a href="" class="ui-btn__register ui-btn">
+                             Back to Main Page
+                            </a>
+                  
                     </div>
 
                 </div>

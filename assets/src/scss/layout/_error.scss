@@ -1,0 +1,17 @@
+.error {
+    &_number {
+        font-size:150px;
+        font-weight:700;
+        color:var(--color-primary);
+    }
+
+    &_txt {
+        margin-bottom: 60px;
+        font-size: 20px;
+        color:var(--color-primary);
+    }
+}
+
+.not-found-page__wrap {
+    text-align: center;
+}
