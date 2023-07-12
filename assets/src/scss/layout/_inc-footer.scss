@@ -135,6 +135,13 @@
                 text-decoration: underline;
             }
         }
+
+        &__none {
+            display: none;
+            .footer-banners {
+                border-bottom: none;
+            }
+        }
     }
 
     &-bar {

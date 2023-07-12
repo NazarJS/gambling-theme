@@ -28,6 +28,8 @@ $link_for_mobile      = get_field( 'link_for_mobile', 'options' );
 $link_for_mobile_text = get_field( 'link_for_mobile_text', 'options' ) ?? '';
 $link_for_mobile_link = get_field( 'link_for_mobile_link', 'options' ) ?? '';
 $copyright = get_field('footer_bottom_copyright' , 'options');
+$privacy = get_field('footer_bottom_privacy' , 'options');
+$rules = get_field('footer_bottom_rules' , 'options');
 ?>
 <?php
 $body_metrics_code = get_field( 'body_code', 'options' );
@@ -36,7 +38,9 @@ if ( ! empty( $body_metrics_code ) ) {
 }
 ?>
 
-<footer class="footer" id="footer">
+<footer class="footer <?php if(empty($privacy) && empty($rules) && empty($copyright)) {
+          echo 'footer-bottom__none';
+        } ?>" id="footer">
     <div class="container">
          
         <div class="footer__container">
@@ -91,17 +95,29 @@ if ( ! empty( $body_metrics_code ) ) {
 
         <div class="footer-bottom">
           <div class="footer-bootom__links">
-            <a href="#" class="footer-bottom__link">
-              Privacy Policy
-            </a>
+          
 
-            <a href="#" class="footer-bottom__link">
-              Rules of personal data processing
-            </a>
+            <?php if ( ! empty( $privacy['url'] ) && ! empty( $privacy['title'] ) ): ?>
+                
+                  <a href="<?php echo $privacy['url'] ?>" class="footer-bottom__link">
+                    <?php echo $privacy['title'] ?>
+                  </a>  
+               
+				    <?php endif; ?>
+            
+
+            <?php if ( ! empty( $rules['url'] ) && ! empty( $rules['title'] ) ): ?>
+                
+                  <a href="<?php echo $rules['url'] ?>" class="footer-bottom__link">
+                    <?php echo $rules['title'] ?>
+                  </a>  
+                
+				    <?php endif; ?>
           </div>
 
           <div class="footer-bottom__info">
-            © <?php echo  date('Y') ?>. <?php echo $copyright ?>  
+            <!-- © <?php /*echo  date('Y') */ ?>.  -->
+            <?php echo $copyright ?>  
           </div>
         </div>
     </div>
