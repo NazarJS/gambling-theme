@@ -65,9 +65,9 @@ echo acf_block_before( 'main screen', $is_preview );
                   </div>
 
                   <?php if ( ! empty( $title ) ): ?>
-					          <h1>
+					          <span class="main-register__title">
                       <?php echo $title ?>
-                   </h1>
+                   <span>
 				          <?php endif; ?>
 
                   <?php if ( ! empty( $button_sign['url'] ) && ! empty( $button_sign['title'] ) ): ?>
